@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tumblr-num-7-d-9-lp-xj-1-slhhf-0-o-1-1280 {
+    width: 1366px;
+    height: 768px;
+}
+
+.topbg {
+    width: 1366px;
+    height: 60px;
+    background-color: #051019;
+}
+
+.rectangle-861 {
+    position: relative;
+    top: 726px;
+    left: 0px;
+    width: 1366px;
+    height: 42px;
+    background-color: #112130;
+}
+
+.sheild {
+    position: relative;
+    top: 20px;
+    left: 16px;
+    width: 19px;
+    height: 20px;
+    background-color: #1871bc;
+}
+
+.t {
+    position: relative;
+    top: 4px;
+    left: 4.4px;
+    width: 11px;
+    height: 13px;
+    font-family: AdobeGurmukhi;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #ffffff;
+}
+
+.titanium {
+    position: relative;
+    top: 0.2px;
+    left: 44px;
+    width: 88px;
+    height: 17px;
+    font-family: NotoSansCJKkr;
+    font-size: 19.8px;
+    font-weight: bold;
+    text-align: right;
+    color: #ffffff;
+}
+
+.sel-bg-copy {
+    width: 70px;
+    height: 60px;
+    background-color: #0a85ed;
+    background-color: var(--lightblue);
+}
