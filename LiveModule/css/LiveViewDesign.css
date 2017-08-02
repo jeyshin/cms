@@ -59,8 +59,20 @@ body {
 }
 
 .sel-bg-copy {
+    position: relative;
+    top: -20px;
+    left: 544px;
     width: 70px;
     height: 60px;
     background-color: #0a85ed;
-    background-color: var(--lightblue);
+}
+
+.ic-devices {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 30px;
+    height: 20px;
+    object-fit: contain;
+    background-color: #fafafa;
 }
