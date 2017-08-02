@@ -375,8 +375,121 @@ body {
     color: #aabece;
 }
 
-.rounded-rectangle-1136-setting {
+.rounded-rectangle-1136-setting-codec{
+    position: absolute;
+    top: 92px;
+    left: 148px;
     width: 193px;
     height: 28px;
     background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-resolution {
+    position: absolute;
+    top: 128px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-bitrate {
+    position: absolute;
+    top: 200px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-framerate{
+    position: absolute;
+    top: 236px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-gop-size {
+    position: absolute;
+    top: 272px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.radio-vbr {
+    position: absolute;
+    top: 168px;
+    left: 148px;
+}
+
+.radio-cvbr {
+    position: absolute;
+    top: 168px;
+    left: 246px;
+}
+
+.vbr {
+    width: 27px;
+    height: 11px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fafafa;
+}
+
+.cvbr {
+    width: 36px;
+    height: 12px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fafafa;
+}
+
+.rectangle-3-save {
+    position: absolute;
+    top: 591px;
+    left: 42px;
+    width: 134px;
+    height: 34px;
+    background-color: #051019;
+}
+
+.rectangle-3-reset {
+    position: absolute;
+    top: 591px;
+    left: 184px;
+    width: 134px;
+    height: 34px;
+    background-color: #051019;
+}
+
+.save {
+    position: absolute;
+    top: 603px;
+    left: 97px;
+    width: 25px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 12px;
+    line-height: 0.83;
+    text-align: center;
+    color: #fafafa;
+}
+
+.reset {
+    position: absolute;
+    top: 603px;
+    left: 237px;
+    width: 30px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 12px;
+    line-height: 0.83;
+    text-align: center;
+    color: #fafafa;
 }

@@ -76,10 +76,41 @@
         <div class="bitrate-framerate-gop-size-1-60">Bitrate
             Framerate
             GOP size (1~60)</div>
-        <select class="rounded-rectangle-1136-setting">
+        <select class="rounded-rectangle-1136-setting-codec">
             <option>H.264 Baseline Profile</option>
         </select>
-        <select
+        <select class="rounded-rectangle-1136-setting-resolution">
+            <option>1920x1080</option>
+        </select>
+        <select class="rounded-rectangle-1136-setting-bitrate">
+            <option>4000 Kpbs</option>
+        </select>
+        <select class="rounded-rectangle-1136-setting-framerate">
+            <option>30</option>
+        </select>
+        <select class="rounded-rectangle-1136-setting-gop-size">
+            <option>15</option>
+        </select>
+
+        <div class="radio-vbr">
+            <input type="checkbox">
+            <label class="vbr">VBR</label>
+        </div>
+
+        <div class="radio-cvbr">
+            <input type="checkbox">
+            <label class="cvbr">CVBR</label>
+        </div>
+
+        <div>
+            <button class="rectangle-3-save"></button>
+            <label class="save">Save</label>
+        </div>
+
+        <div>
+            <button class="rectangle-3-reset"></button>
+            <label class="reset">Reset</label>
+        </div>
     </div>
 
     <script>
