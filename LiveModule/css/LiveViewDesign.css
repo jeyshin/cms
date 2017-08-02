@@ -84,6 +84,15 @@ body {
     background-color: #00000000;
 }
 
+.sel-bg-copy-disable-playback:hover {
+    position: absolute;
+    top: 0px;
+    left: 614px;
+    width: 70px;
+    height: 60px;
+    background-color: #064172;
+}
+
 .sel-bg-copy-disable-setting {
     position: absolute;
     top: 0px;
@@ -93,6 +102,15 @@ body {
     background-color: #00000000;
 }
 
+.sel-bg-copy-disable-setting:hover {
+    position: absolute;
+    top: 0px;
+    left: 684px;
+    width: 70px;
+    height: 60px;
+    background-color: #064172;
+}
+
 .sel-bg-copy-disable-question {
     position: absolute;
     top: 0px;
@@ -100,6 +118,15 @@ body {
     width: 70px;
     height: 60px;
     background-color: #00000000;
+}
+
+.sel-bg-copy-disable-question:hover {
+    position: absolute;
+    top: 0px;
+    left: 754px;
+    width: 70px;
+    height: 60px;
+    background-color: #064172;
 }
 
 .ic-devices {
