@@ -216,7 +216,7 @@ body {
 }
 
 .ic-mic-on {
-    position: relative;
+    position: absolute;
     top: 7px;
     left: 17px;
     width: 14px;
@@ -226,63 +226,63 @@ body {
 }
 
 .ic-sound-on {
-    position: relative;
+    position: absolute;
     top: 11.4px;
-    left: 20px;
+    left: 51px;
     width: 20px;
     height: 19px;
     background-color: #00fafafa;
 }
 
 .ic-picture-on {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 16px;
+    left: 87px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
 }
 
 .ic-position-on {
-    position: relative;
+    position: absolute;
     top: 11px;
-    left: 18px;
+    left: 123px;
     width: 20px;
     height: 20px;
     background-color: #00fafafa;
 }
 
 .ic-zoom-on {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 16px;
+    left: 159px;
     width: 15px;
     height: 15px;
     background-color: #00fafafa;
 }
 
 .ic-emergency-on {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 20px;
+    left: 194px;
     width: 20px;
     height: 18px;
     background-color: #00fafafa;
 }
 
 .ic-event-on {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 17px;
+    left: 231px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
 }
 
 .ic-vca-on {
-    position: relative;
+    position: absolute;
     top: 12px;
-    left: 18px;
+    left: 267px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
