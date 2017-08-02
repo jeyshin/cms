@@ -584,3 +584,72 @@ input[type="range"]  {
     height: 27px;
     background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.6));
 }
+
+.ellipse-10-copy-4 {
+    position: absolute;
+    top: 339px;
+    left: 709px;
+    width: 48.7px;
+    height: 43.5px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-10 {
+    position: absolute;
+    top: 368.9px;
+    left: 732.2px;
+    width: 32.8px;
+    height: 55.7px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-11 {
+    position: absolute;
+    top: 410.9px;
+    left: 709px;
+    width: 47.8px;
+    height: 42px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-12 {
+    position: absolute;
+    top: 411.4px;
+    left: 659.5px;
+    width: 48.5px;
+    height: 41.6px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-13 {
+    position: absolute;
+    top: 368.5px;
+    left: 651px;
+    width: 33.1px;
+    height: 56.6px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-4 {
+    position: absolute;
+    top: 339px;
+    left: 658.6px;
+    width: 49.4px;
+    height: 43.1px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.ellipse-9 {
+    position: absolute;
+    top: 379px;
+    left: 691px;
+    width: 34px;
+    height: 34px;
+    background-color: #00fafafa;
+}
