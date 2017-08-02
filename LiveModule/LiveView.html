@@ -111,8 +111,19 @@
             <button class="rectangle-3-reset"></button>
             <label class="reset">Reset</label>
         </div>
-    </div>
 
+
+    </div>
+    <div class="bg-mic">
+        <label class="bg-mic-level">75</label>
+        <img src="png/ic-mic-on.png" srcset="png/ic-mic-on@2x.png 2x, png/ic-mic-on@3x.png 3x" class="ic-mic-on-copy">
+        <input type="range" class="ic-mic-slide"/>
+    </div>
+    <div class="bg-sound">
+        <label class="bg-sound-level">75</label>
+        <img src="png/ic-audio-on.png" srcset="png/ic-audio-on@2x.png 2x, png/ic-audio-on@3x.png 3x" class="ic-audioo-on-copy">
+        <input type="range" class="ic-audio-slide"/>
+    </div>
     <script>
         var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
         var jpegPlayer = new JpegPlayManager("webPlayer")

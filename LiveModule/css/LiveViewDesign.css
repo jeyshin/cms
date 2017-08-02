@@ -493,3 +493,85 @@ body {
     text-align: center;
     color: #fafafa;
 }
+
+.bg-mic {
+    position: absolute;
+    top: 537px;
+    left: 6px;
+    width: 36px;
+    height: 186px;
+    background-color: #112130;
+    border: solid 1px #000000;
+}
+
+.bg-mic-level {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 13px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    text-align: center;
+    color: #aabece;
+}
+
+.ic-mic-on-copy {
+    position: absolute;
+    top: 154px;
+    left: 11px;
+    width: 14px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #00fafafa;
+}
+
+.bg-sound {
+    position: absolute;
+    top: 537px;
+    left: 42px;
+    width: 36px;
+    height: 186px;
+    background-color: #112130;
+    border: solid 1px #000000;
+}
+
+.bg-sound-level {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 13px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    text-align: center;
+    color: #aabece;
+}
+
+.ic-audioo-on-copy {
+    position: absolute;
+    top: 158.4px;
+    left: 9px;
+    width: 20px;
+    height: 19px;
+    background-color: #00fafafa;
+}
+
+input[type="range"]  {
+    transform: rotate(90deg);
+}
+.ic-mic-slide {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    height: 6px;
+    width: 100px;
+}
+
+.ic-audio-slide {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    height: 6px;
+    width: 100px;
+}
