@@ -23,8 +23,8 @@ body {
 }
 
 .rectangle-861 {
-    position: relative;
-    top: 708px;
+    position: absolute;
+    top: 726px;
     left: 0px;
     width: 1366px;
     height: 42px;
@@ -323,9 +323,60 @@ body {
 
 .live-view {
     position: absolute;
-    top: 0px;
+    top: 60px;
     left: 0px;
     width: 1366px;
-    height: 768px;
+    height: 666px;
     background-color: #00000000;
+}
+
+.layer-1529 {
+    position: absolute;
+    top: 60px;
+    left: 1006px;
+    width: 360px;
+    height: 665px;
+    background-color: rgba(5, 16, 25, 0.6);
+}
+
+.stream-setting-title {
+    position: absolute;
+    top: 38px;
+    left: 21px;
+    width: 300px;
+    height: 21px;
+    font-family: NanumGothic;
+    font-size: 22px;
+    line-height: 1.64;
+    color: #fafafa;
+}
+
+.codec-resolution-bitrate-control {
+    position: absolute;
+    top: 99px;
+    left: 22px;
+    width: 100px;
+    height: 84px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 2.57;
+    color: #aabece;
+}
+
+.bitrate-framerate-gop-size-1-60 {
+    position: absolute;
+    top: 207px;
+    left: 22px;
+    width: 105px;
+    height: 85px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 2.57;
+    color: #aabece;
+}
+
+.rounded-rectangle-1136-setting {
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
 }
