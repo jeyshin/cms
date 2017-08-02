@@ -3,6 +3,14 @@ body {
     padding: 0px;
 }
 
+.css-reset {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
 .tumblr-num-7-d-9-lp-xj-1-slhhf-0-o-1-1280 {
     width: 1366px;
     height: 768px;
@@ -59,12 +67,39 @@ body {
 }
 
 .sel-bg-copy {
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: 0px;
     left: 544px;
     width: 70px;
     height: 60px;
     background-color: #0a85ed;
+}
+
+.sel-bg-copy-disable-playback {
+    position: absolute;
+    top: 0px;
+    left: 614px;
+    width: 70px;
+    height: 60px;
+    background-color: #00000000;
+}
+
+.sel-bg-copy-disable-setting {
+    position: absolute;
+    top: 0px;
+    left: 684px;
+    width: 70px;
+    height: 60px;
+    background-color: #00000000;
+}
+
+.sel-bg-copy-disable-question {
+    position: absolute;
+    top: 0px;
+    left: 754px;
+    width: 70px;
+    height: 60px;
+    background-color: #00000000;
 }
 
 .ic-devices {
@@ -74,5 +109,35 @@ body {
     width: 30px;
     height: 20px;
     object-fit: contain;
-    background-color: #fafafa;
+    background-color: #00fafafa;
+}
+
+.playback {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 22px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.system {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.ellipse-5 {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #00fafafa;
 }
