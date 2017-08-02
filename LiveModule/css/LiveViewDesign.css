@@ -24,7 +24,7 @@ body {
 
 .rectangle-861 {
     position: relative;
-    top: 726px;
+    top: 708px;
     left: 0px;
     width: 1366px;
     height: 42px;
@@ -167,4 +167,138 @@ body {
     font-size: 11px;
     line-height: 1.82;
     color: #fafafa;
+}
+
+.nor {
+    position: absolute;
+    top: 0px;
+    left: 1306px;
+    width: 60px;
+    height: 60px;
+    background-color: #081723;
+}
+
+.login {
+    position: relative;
+    top: 22px;
+    left: 22px;
+    width: 16px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #00f8f8f8;
+}
+
+.ic-mic-on {
+    position: relative;
+    top: 7px;
+    left: 17px;
+    width: 14px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #00fafafa;
+}
+
+.ic-sound-on {
+    position: relative;
+    top: 11.4px;
+    left: 20px;
+    width: 20px;
+    height: 19px;
+    background-color: #00fafafa;
+}
+
+.ic-picture-on {
+    position: relative;
+    top: 12px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-position-on {
+    position: relative;
+    top: 11px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    background-color: #00fafafa;
+}
+
+.ic-zoom-on {
+    position: relative;
+    top: 12px;
+    left: 16px;
+    width: 15px;
+    height: 15px;
+    background-color: #00fafafa;
+}
+
+.ic-emergency-on {
+    position: relative;
+    top: 12px;
+    left: 20px;
+    width: 20px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-event-on {
+    position: relative;
+    top: 12px;
+    left: 17px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-vca-on {
+    position: relative;
+    top: 12px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.vca {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 7px;
+    font-family: Arial;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    text-align: right;
+    color: #112130;
+}
+
+.ic-setting-on {
+    position: absolute;
+    top: 12px;
+    left: 1297px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-expand-on {
+    position: absolute;
+    top: 12px;
+    left: 1332px;
+    width: 20px;
+    height: 16px;
+    background-color: #00fafafa;
+    border: solid 2px #00fafafa;
+}
+
+.live-view {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 768px;
+    background-color: #00000000;
 }
