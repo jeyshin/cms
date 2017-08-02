@@ -15,6 +15,7 @@ WebConnection.prototype.ConnectToServer = function () {
             this.webSocketConnection.binaryType = 'arraybuffer'
             this.webSocketConnection.onerror = function (event) {
                 PrintLogMessage("WebBroadcast", "onerror", "Error: " + event, LOG_LEVEL_ERROR)
+                alert("No connection.")
             }
 
             this.webSocketConnection.onopen = function (event) {
