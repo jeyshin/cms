@@ -141,3 +141,21 @@ body {
     object-fit: contain;
     background-color: #00fafafa;
 }
+
+.rounded-rectangle-1136 {
+    position: absolute;
+    top: 16px;
+    left: 1042px;
+    width: 120px;
+    height: 28px;
+    background-color: #112130;
+}
+
+.stream {
+    width: 43px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.82;
+    color: #fafafa;
+}
