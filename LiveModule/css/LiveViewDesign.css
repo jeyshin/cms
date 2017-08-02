@@ -575,3 +575,12 @@ input[type="range"]  {
     height: 6px;
     width: 100px;
 }
+
+.bg-copy-6 {
+    position: absolute;
+    top: 699px;
+    left: 0px;
+    width: 1366px;
+    height: 27px;
+    background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.6));
+}
