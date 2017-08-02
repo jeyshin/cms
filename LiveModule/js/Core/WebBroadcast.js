@@ -20,6 +20,7 @@ WebConnection.prototype.ConnectToServer = function () {
 
             this.webSocketConnection.onopen = function (event) {
                 PrintLogMessage("WebBroadcast", "onopen", "Connection opened: " + event, LOG_LEVEL_INFO)
+                webConnection.SendMessage('PLAY', jpegPlayer)
             }
         }
         catch (except) {
