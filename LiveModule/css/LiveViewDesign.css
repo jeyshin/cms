@@ -142,10 +142,19 @@ body {
     background-color: #00fafafa;
 }
 
-.rounded-rectangle-1136 {
+.rounded-rectangle-1136-stream {
     position: absolute;
     top: 16px;
     left: 1042px;
+    width: 120px;
+    height: 28px;
+    background-color: #112130;
+}
+
+.rounded-rectangle-1136-language {
+    position: absolute;
+    top: 16px;
+    left: 1170px;
     width: 120px;
     height: 28px;
     background-color: #112130;
