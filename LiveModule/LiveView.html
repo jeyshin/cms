@@ -7,7 +7,7 @@
 </head>
 <body class=".tumblr-num-7-d-9-lp-xj-1-slhhf-0-o-1-1280">
 
-    <canvas class="live-view" ></canvas>
+    <canvas class="live-view" id="webPlayer"></canvas>
     <div class="topbg">
         <div class="sheild">
             <div class="t">T</div>
@@ -63,5 +63,12 @@
         <img src="" class="ic-expand-on">
         <div class="vca">VCA</div>
     </div>
+
+    <script>
+        var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
+        var jpegPlayer = new JpegPlayManager("webPlayer")
+        webConnection.ConnectToServer()
+        webConnection.SendMessage('PLAY', jpegPlayer)
+    </script>
 </body>
 </html>
