@@ -88,12 +88,11 @@ html {
 }
 
 .sel-bg-copy-disable-playback:hover {
-    position: relative;
-    top: 0px;
-    left: 412px;
-    width: 70px;
-    height: 60px;
     background-color: #064172;
+}
+
+.sel-bg-copy-disable-playback:active {
+    background-color: #0a85ed;
 }
 
 .sel-bg-copy-disable-setting {
@@ -106,12 +105,11 @@ html {
 }
 
 .sel-bg-copy-disable-setting:hover {
-    position: relative;
-    top: 0px;
-    left: 412px;
-    width: 70px;
-    height: 60px;
     background-color: #064172;
+}
+
+.sel-bg-copy-disable-setting:active {
+    background-color: #0a85ed;
 }
 
 .sel-bg-copy-disable-question {
@@ -124,12 +122,11 @@ html {
 }
 
 .sel-bg-copy-disable-question:hover {
-    position: relative;
-    top: 0px;
-    left: 412px;
-    width: 70px;
-    height: 60px;
     background-color: #064172;
+}
+
+.sel-bg-copy-disable-question:active {
+    background-color: #0a85ed;
 }
 
 .ic-devices {
@@ -207,6 +204,14 @@ html {
     width: 60px;
     height: 60px;
     background-color: #081723;
+}
+
+.nor:hover {
+    background-color: #064172;
+}
+
+.nor:active {
+    background-color: #0a85ed;
 }
 
 .login {
