@@ -40,12 +40,12 @@
 <body>
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top topbg ">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand titanium">Titanium</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top topbg ">
+    <section class="visible-lg">
+        <div class="container-fluid container">
+            <div class="navbar-header">
+                <img src="png/logo.png" srcset="png/logo@2x.png 2x, png/logo@3x.png 3x" class="logo">
+            </div>
             <ul class="nav navbar-nav">
                 <li class="active sel-bg-copy">
                     <img src="png/ic-devices.png" srcset="png/ic-devices@2x.png 2x, png/ic-devices@3x.png 3x" class="ic-devices">
@@ -72,11 +72,6 @@
                     </ul>
                 </li>-->
             </ul>
-            <!--<ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">Default</a></li>
-                <li><a href="../navbar-static-top/">Static top</a></li>
-                <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-            </ul>-->
 
             <select class="rounded-rectangle-1136-stream">
                 <option value="Stream1" class="stream">Stream1</option>
@@ -96,25 +91,36 @@
             </select>
 
             <div class="nor">
-                <img src="" class="login">
+                <img src="png/login.png" srcset="png/login@2x.png 2x, png/login@3x.png 3x" class="login">
             </div>
-        </div><!--/.nav-collapse -->
-    </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar/">Default</a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                </ul>-->
+            </div><!--/.nav-collapse -->
+        </div>
+    </section>
+
 </nav>
 
 <nav class="rectangle-861 ">
 
-    <img src="png/ic-mic-on.png" srcset="png/ic-mic-on@2x.png 2x, png/ic-mic-on@3x.png 3x" class="ic-mic-on">
-    <img src="png/ic-audio-on.png" srcset="png/ic-audio-on@2x.png 2x, png/ic-audio-on@3x.png 3x" class="ic-sound-on">
-    <img src="png/ic-snapshot.png" srcset="png/ic-snapshot@2x.png 2x, png/ic-snapshot@3x.png 3x" class="ic-picture-on">
-    <img src="png/ic-ptz.png" srcset="png/ic-ptz@2x.png 2x, png/ic-ptz@3x.png 3x" class="ic-position-on">
-    <img src="png/ic-zoom.png" srcset="png/ic-zoom@2x.png 2x, png/ic-zoom@3x.png 3x" class="ic-zoom-on">
-    <img src="png/ic-trigger.png" srcset="png/ic-trigger@2x.png 2x, png/ic-trigger@3x.png 3x" class="ic-emergency-on">
-    <img src="png/ic-relay-output.png" srcset="png/ic-relay-output@2x.png 2x, png/ic-relay-output@3x.png 3x" class="ic-event-on">
-    <img src="" class="ic-vca-on">
-    <img src="png/ic-quick-set.png" srcset="png/ic-quick-set@2x.png 2x, png/ic-quick-set@3x.png 3x" class="ic-setting-on">
-    <img src="png/ic-maiximize.png" srcset="png/ic-maiximize@2x.png 2x, png/ic-maiximize@3x.png 3x" class="ic-expand-on">
-    <div class="vca">VCA</div>
+    <section class="visible-lg">
+        <img src="png/ic-mic-on.png" srcset="png/ic-mic-on@2x.png 2x, png/ic-mic-on@3x.png 3x" class="ic-mic-on">
+        <img src="png/ic-audio-on.png" srcset="png/ic-audio-on@2x.png 2x, png/ic-audio-on@3x.png 3x" class="ic-sound-on">
+        <img src="png/ic-snapshot.png" srcset="png/ic-snapshot@2x.png 2x, png/ic-snapshot@3x.png 3x" class="ic-picture-on">
+        <img src="png/ic-ptz.png" srcset="png/ic-ptz@2x.png 2x, png/ic-ptz@3x.png 3x" class="ic-position-on">
+        <img src="png/ic-zoom.png" srcset="png/ic-zoom@2x.png 2x, png/ic-zoom@3x.png 3x" class="ic-zoom-on">
+        <img src="png/ic-trigger.png" srcset="png/ic-trigger@2x.png 2x, png/ic-trigger@3x.png 3x" class="ic-emergency-on">
+        <img src="png/ic-relay-output.png" srcset="png/ic-relay-output@2x.png 2x, png/ic-relay-output@3x.png 3x" class="ic-event-on">
+        <img src="" class="ic-vca-on">
+        <img src="png/ic-quick-set.png" srcset="png/ic-quick-set@2x.png 2x, png/ic-quick-set@3x.png 3x" class="ic-setting-on">
+        <img src="png/ic-maiximize.png" srcset="png/ic-maiximize@2x.png 2x, png/ic-maiximize@3x.png 3x" class="ic-expand-on">
+        <div class="vca">VCA</div>
+    </section>
 </nav>
 
 <canvas class="live-view" id="webPlayer"></canvas>

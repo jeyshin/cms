@@ -309,7 +309,7 @@ html {
 .ic-setting-on {
     position: absolute;
     top: 12px;
-    left: 1297px;
+    left: calc(100% - 69px);
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
@@ -318,7 +318,7 @@ html {
 .ic-expand-on {
     position: absolute;
     top: 12px;
-    left: 1332px;
+    left: calc(100% - 32px);
     width: 20px;
     height: 16px;
     background-color: #00fafafa;
@@ -656,4 +656,12 @@ input[type="range"]  {
     width: 34px;
     height: 34px;
     background-color: #00fafafa;
+}
+
+.logo {
+    top: 0px;
+    left: 0px;
+    width: 148px;
+    height: 60px;
+    object-fit: contain;
 }
