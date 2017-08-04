@@ -65,63 +65,62 @@ body {
 }
 
 .sel-bg-copy {
-    position: absolute;
     top: 0px;
-    left: 544px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #0a85ed;
 }
 
 .sel-bg-copy-disable-playback {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 614px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #00000000;
 }
 
 .sel-bg-copy-disable-playback:hover {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 614px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #064172;
 }
 
 .sel-bg-copy-disable-setting {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 684px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #00000000;
 }
 
 .sel-bg-copy-disable-setting:hover {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 684px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #064172;
 }
 
 .sel-bg-copy-disable-question {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 754px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #00000000;
 }
 
 .sel-bg-copy-disable-question:hover {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 754px;
+    left: 412px;
     width: 70px;
     height: 60px;
     background-color: #064172;
