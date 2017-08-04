@@ -225,76 +225,120 @@ html {
 }
 
 .ic-mic-on {
-    position: absolute;
-    top: 7px;
-    left: 17px;
-    width: 14px;
-    height: 24px;
+    position: relative;
+    top: 11px;
+    left: 11px;
     border-radius: 3px;
-    background-color: #00fafafa;
+}
+
+.ic-mic-on-position {
+    position: absolute;
+    top: 0px;
+    left: 6px;
 }
 
 .ic-sound-on {
-    position: absolute;
-    top: 11.4px;
-    left: 51px;
+    position: relative;
+    top: 11.6px;
+    left: 9px;
     width: 20px;
     height: 19px;
-    background-color: #00fafafa;
+}
+
+.ic-sound-on-position {
+    position: absolute;
+    top: 0px;
+    left: 42px;
 }
 
 .ic-picture-on {
-    position: absolute;
+    position: relative;
     top: 12px;
-    left: 87px;
+    left: 9px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
 }
 
-.ic-position-on {
+.ic-picture-on-position {
     position: absolute;
+    top: 0px;
+    left: 78px;
+}
+
+.ic-position-on {
+    position: relative;
     top: 11px;
-    left: 123px;
+    left: 9px;
     width: 20px;
     height: 20px;
     background-color: #00fafafa;
 }
 
-.ic-zoom-on {
+.ic-position-on-position {
     position: absolute;
+    top: 0px;
+    left: 114px;
+}
+
+.ic-zoom-on {
+    position: relative;
     top: 12px;
-    left: 159px;
+    left: 9px;
     width: 15px;
     height: 15px;
     background-color: #00fafafa;
 }
 
+.ic-zoom-on-position {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
 .ic-emergency-on {
     position: absolute;
     top: 12px;
-    left: 194px;
+    left: 8px;
     width: 20px;
     height: 18px;
     background-color: #00fafafa;
 }
 
-.ic-event-on {
+.ic-emergency-on-position {
     position: absolute;
+    top: 0px;
+    left: 186px;
+}
+
+.ic-event-on {
+    position: relative;
     top: 12px;
-    left: 231px;
+    left: 9px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
 }
 
-.ic-vca-on {
+.ic-event-on-position {
     position: absolute;
+    top: 0px;
+    left: 222px;
+}
+
+.ic-vca-on {
+    position: relative;
     top: 12px;
-    left: 267px;
+    left: 11px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
+}
+
+.ic-vca-on-position {
+    position: absolute;
+    top: 0px;
+    left: 258px;
 }
 
 .vca {
@@ -312,22 +356,34 @@ html {
 }
 
 .ic-setting-on {
-    position: absolute;
+    position: relative;
     top: 12px;
-    left: calc(100% - 69px);
+    left: 9px;
     width: 18px;
     height: 18px;
     background-color: #00fafafa;
 }
 
-.ic-expand-on {
+.ic-setting-on-position {
     position: absolute;
+    top: 0px;
+    left: calc(100% - 73px);
+}
+
+.ic-expand-on {
+    position: relative;
     top: 12px;
-    left: calc(100% - 32px);
+    left: 9px;
     width: 20px;
     height: 16px;
     background-color: #00fafafa;
     border: solid 2px #00fafafa;
+}
+
+.ic-expand-on-position {
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 36px);
 }
 
 .live-view {
@@ -669,4 +725,38 @@ input[type="range"]  {
     width: 148px;
     height: 60px;
     object-fit: contain;
+}
+
+.rectangle-47 {
+    position: absolute;
+    top: 8%;
+    left: 97%;
+    width: 22px;
+    height: 22px;
+    background-color: #1848a0;
+}
+
+.ic-bottom {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
+}
+
+.ic-bottom:hover {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
+    border: solid 1px #0a85ed;
+}
+
+ic-bottom:active {
+    width: 36px;
+    height: 42px;
+    background-color: #064172;
+}
+
+ic-bottom:disabled {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
 }
