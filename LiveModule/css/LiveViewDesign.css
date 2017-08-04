@@ -1,6 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 .css-reset {
@@ -167,18 +173,18 @@ body {
 }
 
 .rounded-rectangle-1136-stream {
-    position: absolute;
+    position: relative;
     top: 16px;
-    left: 1042px;
+    left: 498px;
     width: 120px;
     height: 28px;
     background-color: #112130;
 }
 
 .rounded-rectangle-1136-language {
-    position: absolute;
+    position: relative;
     top: 16px;
-    left: 1170px;
+    left: 506px;
     width: 120px;
     height: 28px;
     background-color: #112130;
@@ -196,14 +202,15 @@ body {
 .nor {
     position: absolute;
     top: 0px;
-    left: 1306px;
+    left: calc(100% - 60px);
+    margin-right: 60px;
     width: 60px;
     height: 60px;
     background-color: #081723;
 }
 
 .login {
-    position: relative;
+    position: absolute;
     top: 22px;
     left: 22px;
     width: 16px;
