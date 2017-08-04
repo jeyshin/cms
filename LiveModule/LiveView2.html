@@ -31,6 +31,10 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="css/LiveViewDesign.css">
+    <script src="js/Core/WebBroadcast.js"></script>
+    <script src="js/Utils/Logger.js"></script>
+    <script src="js/Settings/DefineManager.js"></script>
+    <script src="js/Core/JpegPlayer.js"></script>
 </head>
 
 <body>
@@ -113,6 +117,8 @@
     <div class="vca">VCA</div>
 </nav>
 
+<canvas class="live-view" id="webPlayer"></canvas>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -121,5 +127,11 @@
 <script src="../Bootstrap/js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../Bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    var webConnection = new WebConnection("ws://192.168.0.12/jpeg/1/jpeg_stream.websock", "admin", "admin");
+    var jpegPlayer = new JpegPlayManager("webPlayer")
+    webConnection.ConnectToServer()
+
+</script>
 </body>
 </html>

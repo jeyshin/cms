@@ -329,8 +329,8 @@ html {
     position: absolute;
     top: 60px;
     left: 0px;
-    width: 1366px;
-    height: 666px;
+    width: 100%;
+    height: calc(100% - 102px);
     background-color: #00000000;
 }
 
