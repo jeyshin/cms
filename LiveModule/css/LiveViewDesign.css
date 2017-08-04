@@ -727,6 +727,12 @@ input[type="range"]  {
     object-fit: contain;
 }
 
+.logo-position {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .rectangle-47 {
     position: absolute;
     top: 8%;
