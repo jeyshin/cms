@@ -1,3 +1,45 @@
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.21%;
+    *width: 14.21%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.21%;
+    *width: 14.21%;
+  }
+}
+
+
+
+
+
+.seven-cols .lineashist {
+  float: left;
+  width: 1px;
+  height: 190px;
+  opacity: 0.05;
+  background-color: #ffffff;
+}
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -26,6 +68,52 @@ html {
 /*
     NAVIGATION BAR AND ITS ELEMENTS
 */
+.dropnav-setting {
+    position: fixed;
+    height: 0%;
+    width: 100%;
+    z-index: 5;
+    top: 60px;
+    left: 0;
+    background-color: #051019;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.3s;
+    padding-top: 0px;
+}
+
+.dropnav-setting.open {
+    height: 262px;
+}
+
+.dropnav-setting a {
+    padding: 0px 4px 0px 16px;
+    line-height: 2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: NanumGothic;
+    color: #fafafa;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropnav-setting a.child  {
+    font-size: 12px;
+    color: #555555;
+}
+
+.dropnav-setting .container-fluid {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    width: 100%;
+    height: 190px;
+}
+
+.dropnav-textbox {
+    width: grid-column(1 of 7);
+}
+
 .btn-nav {
     position: relative;
     top: 0px;
@@ -33,6 +121,9 @@ html {
     width: 70px;
     height: 60px;
     background-color: #00000000;
+    /* More Fancier, more Smoother.*/
+    -webkit-transition-duration: 0.2s; 
+    transition-duration: 0.2s;
 }
 
 .btn-nav:hover, .btn-nav.hover {
@@ -56,7 +147,7 @@ html {
 .ic-playback {
     position: relative;
     top: 19px;
-    left: 21px;
+    left: 23px;
     width: 24px;
     height: 22px;
     object-fit: contain;
@@ -66,7 +157,7 @@ html {
 .ic-system {
     position: relative;
     top: 19px;
-    left: 21px;
+    left: 23px;
     width: 24px;
     height: 24px;
     object-fit: contain;
@@ -76,7 +167,7 @@ html {
 .ic-help {
     position: relative;
     top: 19px;
-    left: 21px;
+    left: 24px;
     width: 24px;
     height: 24px;
     object-fit: contain;
