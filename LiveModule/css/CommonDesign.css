@@ -1,0 +1,695 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.css-reset {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+.topbg {
+    position: absolute;
+    height: 60px;
+    background-color: #051019;
+}
+
+/*
+    NAVIGATION BAR AND ITS ELEMENTS
+*/
+.btn-nav {
+    position: relative;
+    top: 0px;
+    left: 412px;
+    width: 70px;
+    height: 60px;
+    background-color: #00000000;
+}
+
+.btn-nav:hover, .btn-nav.hover {
+    background-color: #064172;
+}
+
+.btn-nav:active, .btn-nav.active {
+    background-color: #0a85ed;
+}
+
+.ic-devices {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 30px;
+    height: 20px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.ic-playback {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 22px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.ic-system {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.ic-help {
+    position: relative;
+    top: 19px;
+    left: 21px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #00fafafa;
+}
+
+.dropdown-stream {
+    position: relative;
+    top: 16px;
+    left: 498px;
+    width: 120px;
+    height: 28px;
+    background-color: #112130;
+}
+
+.dropdown-language {
+    position: relative;
+    top: 16px;
+    left: 506px;
+    width: 120px;
+    height: 28px;
+    background-color: #112130;
+}
+
+.stream {
+    width: 43px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.82;
+    color: #fafafa;
+}
+
+.logout {
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 60px);
+    margin-right: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: #081723;
+}
+
+.logout:hover {
+    background-color: #064172;
+}
+
+.logout:active {
+    background-color: #0a85ed;
+}
+
+.login {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 16px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #00f8f8f8;
+}
+
+
+/*
+    BOTTOM STATUS BAR AND ITS ELEMENTS
+*/
+.bar-bottom {
+    position: absolute;
+    top: calc(100% - 42px);
+    left: 0px;
+    width: 100%;
+    height: 42px;
+    background-color: #112130;
+}
+
+.ic-mic-on {
+    position: relative;
+    top: 11px;
+    left: 11px;
+    border-radius: 3px;
+}
+
+.ic-mic-on-position {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+
+.ic-sound-on {
+    position: relative;
+    top: 11.6px;
+    left: 9px;
+    width: 20px;
+    height: 19px;
+}
+
+.ic-sound-on-position {
+    position: absolute;
+    top: 0px;
+    left: 42px;
+}
+
+.ic-picture-on {
+    position: relative;
+    top: 12px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-picture-on-position {
+    position: absolute;
+    top: 0px;
+    left: 78px;
+}
+
+.ic-position-on {
+    position: relative;
+    top: 11px;
+    left: 9px;
+    width: 20px;
+    height: 20px;
+    background-color: #00fafafa;
+}
+
+.ic-position-on-position {
+    position: absolute;
+    top: 0px;
+    left: 114px;
+}
+
+.ic-zoom-on {
+    position: relative;
+    top: 12px;
+    left: 9px;
+    width: 15px;
+    height: 15px;
+    background-color: #00fafafa;
+}
+
+.ic-zoom-on-position {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+
+.ic-emergency-on {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 20px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-emergency-on-position {
+    position: absolute;
+    top: 0px;
+    left: 186px;
+}
+
+.ic-event-on {
+    position: relative;
+    top: 12px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-event-on-position {
+    position: absolute;
+    top: 0px;
+    left: 222px;
+}
+
+.ic-vca-on {
+    position: relative;
+    top: 12px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-vca-on-position {
+    position: absolute;
+    top: 0px;
+    left: 258px;
+}
+
+.vca {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 7px;
+    font-family: Arial;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    text-align: right;
+    color: #112130;
+}
+
+.ic-setting-on {
+    position: relative;
+    top: 12px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    background-color: #00fafafa;
+}
+
+.ic-setting-on-position {
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 73px);
+}
+
+.ic-expand-on {
+    position: relative;
+    top: 12px;
+    left: 9px;
+    width: 20px;
+    height: 16px;
+    background-color: #00fafafa;
+    border: solid 2px #00fafafa;
+}
+
+.ic-expand-on-position {
+    position: absolute;
+    top: 0px;
+    left: calc(100% - 36px);
+}
+
+.live-view {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 102px);
+    background-color: #00000000;
+}
+
+.layer-1529 {
+    position: absolute;
+    top: 60px;
+    left: 1006px;
+    width: 360px;
+    height: 665px;
+    background-color: rgba(5, 16, 25, 0.6);
+}
+
+.stream-setting-title {
+    position: absolute;
+    top: 38px;
+    left: 21px;
+    width: 300px;
+    height: 21px;
+    font-family: NanumGothic;
+    font-size: 22px;
+    line-height: 1.64;
+    color: #fafafa;
+}
+
+.codec-resolution-bitrate-control {
+    position: absolute;
+    top: 99px;
+    left: 22px;
+    width: 100px;
+    height: 84px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 2.57;
+    color: #aabece;
+}
+
+.bitrate-framerate-gop-size-1-60 {
+    position: absolute;
+    top: 207px;
+    left: 22px;
+    width: 105px;
+    height: 85px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 2.57;
+    color: #aabece;
+}
+
+.rounded-rectangle-1136-setting-codec{
+    position: absolute;
+    top: 92px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-resolution {
+    position: absolute;
+    top: 128px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-bitrate {
+    position: absolute;
+    top: 200px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-framerate{
+    position: absolute;
+    top: 236px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.rounded-rectangle-1136-setting-gop-size {
+    position: absolute;
+    top: 272px;
+    left: 148px;
+    width: 193px;
+    height: 28px;
+    background-color: #051019;
+}
+
+.radio-vbr {
+    position: absolute;
+    top: 168px;
+    left: 148px;
+}
+
+.radio-cvbr {
+    position: absolute;
+    top: 168px;
+    left: 246px;
+}
+
+.vbr {
+    width: 27px;
+    height: 11px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fafafa;
+}
+
+.cvbr {
+    width: 36px;
+    height: 12px;
+    font-family: NanumGothic;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fafafa;
+}
+
+.rectangle-3-save {
+    position: absolute;
+    top: 591px;
+    left: 42px;
+    width: 134px;
+    height: 34px;
+    background-color: #051019;
+}
+
+.rectangle-3-reset {
+    position: absolute;
+    top: 591px;
+    left: 184px;
+    width: 134px;
+    height: 34px;
+    background-color: #051019;
+}
+
+.save {
+    position: absolute;
+    top: 603px;
+    left: 97px;
+    width: 25px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 12px;
+    line-height: 0.83;
+    text-align: center;
+    color: #fafafa;
+}
+
+.reset {
+    position: absolute;
+    top: 603px;
+    left: 237px;
+    width: 30px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 12px;
+    line-height: 0.83;
+    text-align: center;
+    color: #fafafa;
+}
+
+.bg-mic {
+    position: absolute;
+    top: 537px;
+    left: 6px;
+    width: 36px;
+    height: 186px;
+    background-color: #112130;
+    border: solid 1px #000000;
+}
+
+.bg-mic-level {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 13px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    text-align: center;
+    color: #aabece;
+}
+
+.ic-mic-on-copy {
+    position: absolute;
+    top: 154px;
+    left: 11px;
+    width: 14px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #00fafafa;
+}
+
+.bg-sound {
+    position: absolute;
+    top: 537px;
+    left: 42px;
+    width: 36px;
+    height: 186px;
+    background-color: #112130;
+    border: solid 1px #000000;
+}
+
+.bg-sound-level {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 13px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 11px;
+    text-align: center;
+    color: #aabece;
+}
+
+.ic-audioo-on-copy {
+    position: absolute;
+    top: 158.4px;
+    left: 9px;
+    width: 20px;
+    height: 19px;
+    background-color: #00fafafa;
+}
+
+input[type="range"]  {
+    transform: rotate(90deg);
+}
+.ic-mic-slide {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    height: 6px;
+    width: 100px;
+}
+
+.ic-audio-slide {
+    position: absolute;
+    top: 38px;
+    left: 15px;
+    height: 6px;
+    width: 100px;
+}
+
+.bg-copy-6 {
+    position: absolute;
+    top: 699px;
+    left: 0px;
+    width: 1366px;
+    height: 27px;
+    background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.6));
+}
+
+.ellipse-10-copy-4 {
+    position: absolute;
+    top: 339px;
+    left: 709px;
+    width: 48.7px;
+    height: 43.5px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-10 {
+    position: absolute;
+    top: 368.9px;
+    left: 732.2px;
+    width: 32.8px;
+    height: 55.7px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-11 {
+    position: absolute;
+    top: 410.9px;
+    left: 709px;
+    width: 47.8px;
+    height: 42px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-12 {
+    position: absolute;
+    top: 411.4px;
+    left: 659.5px;
+    width: 48.5px;
+    height: 41.6px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-13 {
+    position: absolute;
+    top: 368.5px;
+    left: 651px;
+    width: 33.1px;
+    height: 56.6px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.bg-copy-4 {
+    position: absolute;
+    top: 339px;
+    left: 658.6px;
+    width: 49.4px;
+    height: 43.1px;
+    opacity: 0.6;
+    background-color: #00000000;
+}
+
+.ellipse-9 {
+    position: absolute;
+    top: 379px;
+    left: 691px;
+    width: 34px;
+    height: 34px;
+    background-color: #00fafafa;
+}
+
+.logo {
+    top: 0px;
+    left: 0px;
+    width: 148px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo-position {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.rectangle-47 {
+    position: absolute;
+    top: 8%;
+    left: 97%;
+    width: 22px;
+    height: 22px;
+    background-color: #1848a0;
+}
+
+.ic-bottom {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
+}
+
+.ic-bottom:hover {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
+    border: solid 1px #0a85ed;
+}
+
+ic-bottom:active {
+    width: 36px;
+    height: 42px;
+    background-color: #064172;
+}
+
+ic-bottom:disabled {
+    width: 36px;
+    height: 42px;
+    background-color: #112130;
+}
