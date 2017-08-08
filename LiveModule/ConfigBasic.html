@@ -38,8 +38,9 @@
 
 <script>
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
-    $( "#layout_template" ).load( "_SettingLayout.html", function() {});
-    $( "#setting_template" ).load( "_SettingInformation.html", function() {});
+    $( "#layout_template" ).load( "_SettingLayout.html", function() {
+        $( "#setting_template" ).load( "_SettingInformation.html", function() {});
+    });
 </script>
 
 </body>

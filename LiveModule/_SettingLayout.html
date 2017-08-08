@@ -9,19 +9,15 @@
 
     <div class="setting-buttons">
         <div class="btn-group">
-            <button type="button" class="btn">Information</button>
-            <button type="button" class="btn">Users</button>
-            <button type="button" class="btn">Network</button>
-            <button type="button" class="btn">Video & Image</button>
-            <button type="button" class="btn">Audio</button>
-            <button type="button" class="btn">Date & Time</button>
+            <div class="btn active">Information</button>
+            <div class="btn">Users</button>
+            <div class="btn">Network</button>
+            <div class="btn">Video & Image</button>
+            <div class="btn">Audio</button>
+            <div class="btn">Date & Time</button>
         </div>
     </div>
 
     <div class="setting-contents" id="setting_template">
     </div>
 </div> 
-
-<script>
-    $( "#setting_template" ).load( "_SettingInformation.html", function() {});
-</script>
