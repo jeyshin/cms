@@ -18,181 +18,28 @@
     <link href="../Bootstrap/css/navbar-fixed-top.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/CommonDesign.css">
+    <link rel="stylesheet" type="text/css" href="css/ConfigDesign.css">
     <script src="js/Utils/Logger.js"></script>
     <script src="js/Settings/DefineManager.js"></script>
-    <style>
-        body {
-            background-color: #112130;
-        }
-
-        .setting-container {
-            position: relative;
-            top: 60px;
-            left: 0px;
-            width: 100%;
-            height: calc(100% - 60px);
-            display: table;
-
-            overflow-x:hidden;
-        }
-
-        .setting-topnav {
-            width: 100%;
-            height: 40px;
-            left: 0px;
-            background-color: #081723;
-        }
-
-        .setting-topnav a {
-            font-size: 12px;
-            font-family: NanumGothic;
-            color: #fafafa;
-
-            vertical-align: middle;
-            line-height: 40px;
-            margin-left: 43px;
-            text-decoration: none;
-        }
-
-        .setting-title {
-            width: 100%;
-            height: 40px;
-            left: 0px;
-            margin-top: 40px;
-        }
-
-        .setting-title a {
-            font-size: 28px;
-            font-family: NanumGothic;
-            color: #fafafa;
-
-            vertical-align: middle;
-            line-height: 40px;
-            text-decoration: none;
-
-            margin-left: 43px;
-        }
-
-        .setting-buttons {
-            width: 100%;
-            height: 40px;
-            left: 0px;
-            margin-top: 5px;
-            border-bottom: 2px solid #3b536a; 
-            /*background-color: #081723;*/ /*We're just trying to see the border of this shit*/
-        }
-
-        .setting-buttons .btn-group{
-            margin-left: 40px;
-        }
-
-        .setting-buttons .btn-group .btn{
-            height: 40px;
-            background-color:transparent;
-            font-family: NanumGothic;
-            color: #fafafa;
-            font-size: 14px;
-            transition: 0.1s;
-
-            border-radius: 0px;
-        }
-
-        .setting-buttons .btn-group .btn:hover{
-            color: #0a85ed;
-            transition: 0.1s;
-            border-bottom: 2px solid #0a85ed; 
-        }
-
-        .setting-buttons .btn-group .btn:active{
-            color: #0a85ed;
-            transition: 0.1s;
-            border-bottom: 2px solid #0a85ed; 
-        }
-
-        .setting-contents {
-            height: calc(100% - 165px);
-        }
-
-        .setting-contents .body{
-            padding-left: 40px;
-            padding-top: 40px;
-        }
-
-        .setting-contents .body .title {
-            font-size: 22px;
-            font-family: NanumGothic;
-            color: #fafafa;
-            line-height: 2;
-            text-decoration: none;
-            padding-bottom: 22px;
-        }
-
-        .setting-contents .body .desc {
-            font-size: 14px;
-            font-family: NanumGothic;
-            color: #aabece;
-            line-height: 2;
-            text-decoration: none;
-            transition: 0.1s;
-        }
-
-        .setting-contents .body .desc:hover {
-            color: #0a85ed;
-            transition: 0.1s;
-        }
-    </style>
+    <script src="../Bootstrap/js/jquery.min.js"></script>
 </head>
 
 <body>
     
 <div id="navbar_template"></div> 
-<div class="setting-container">
-    <div class="setting-topnav">
-        <a>Setting　/　Basic Configuration</a>
-    </div>
-
-    <div class="setting-title">
-        <a>Basic Configuration</a>
-    </div>
-
-    <div class="setting-buttons">
-        <div class="btn-group">
-            <button type="button" class="btn">Information</button>
-            <button type="button" class="btn">Users</button>
-            <button type="button" class="btn">Network</button>
-            <button type="button" class="btn">Video & Image</button>
-            <button type="button" class="btn">Audio</button>
-            <button type="button" class="btn">Date & Time</button>
-        </div>
-    </div>
-
-    <div class="setting-contents">
-        <div class="body">
-            <div class="title">Information</div>
-            
-            <div class="desc">Manufacturer : Hitron</div>
-            <div class="desc">Model Name: NVX-6206</div>
-            <div class="desc">Device name: kylee_test_4.10</div>
-            <div class="desc">Firmware Version: 1.6.8-XE_releae</div>
-            <div class="desc">MAC Address: 00:00:00:AA:AA:AC</div>
-            <div class="desc">IP Address: 127.65.124.1</div>
-            <div class="desc">Link-Local IP Address: 132.255.121.11</div>
-            <div class="desc">OpenVPN IP Address: 0.0.0.0</div>
-            <div class="desc">Video Mode: NTSC</div>
-        </div>
-    </div>
-</div> 
+<div id="layout_template"></div> 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
 
-<script src="../Bootstrap/js/jquery.min.js"></script>
 <script src="../Bootstrap/js/bootstrap.min.js"></script>
 
 <script>
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
+    $( "#layout_template" ).load( "_SettingLayout.html", function() {});
+    $( "#setting_template" ).load( "_SettingInformation.html", function() {});
 </script>
 
 </body>
