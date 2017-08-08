@@ -18,42 +18,29 @@
     <link href="../Bootstrap/css/navbar-fixed-top.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/CommonDesign.css">
-    <script src="js/Core/WebBroadcast.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ConfigDesign.css">
     <script src="js/Utils/Logger.js"></script>
     <script src="js/Settings/DefineManager.js"></script>
-    <script src="js/Core/JpegPlayer.js"></script>
+    <script src="../Bootstrap/js/jquery.min.js"></script>
 </head>
 
 <body>
     
 <div id="navbar_template"></div> 
-<div id="slider_template"></div> 
-<div id="bottom_template"></div> 
-
-<div>
-    <img src="png/panic.png" srcset="png/panic@2x.png 2x, png/panic@3x.png 3x" class="rectangle-47">
-</div>
-
-<canvas class="live-view" id="webPlayer"></canvas>
+<div id="layout_template"></div> 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
 
-<script src="../Bootstrap/js/jquery.min.js"></script>
 <script src="../Bootstrap/js/bootstrap.min.js"></script>
 
 <script>
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
-    $( "#slider_template" ).load( "_DropSlider.html", function() {});
-    $( "#bottom_template" ).load( "_ViewBottomBar.html", function() {});
+    $( "#layout_template" ).load( "_SettingLayout.html", function() {});
+    $( "#setting_template" ).load( "_SettingInformation.html", function() {});
 </script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script>
-    var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
-    var jpegPlayer = new JpegPlayManager("webPlayer")
-    webConnection.ConnectToServer()
-</script>
+
 </body>
 </html>
