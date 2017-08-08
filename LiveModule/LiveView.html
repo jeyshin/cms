@@ -1,146 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Live view prototype</title>
-    <link rel="stylesheet" type="text/css" href="css/LiveViewDesign.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../Bootstrap/css/navbar-fixed-top.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/CommonDesign.css">
     <script src="js/Core/WebBroadcast.js"></script>
     <script src="js/Utils/Logger.js"></script>
     <script src="js/Settings/DefineManager.js"></script>
     <script src="js/Core/JpegPlayer.js"></script>
 </head>
-<body class=".tumblr-num-7-d-9-lp-xj-1-slhhf-0-o-1-1280">
 
-    <canvas class="live-view" id="webPlayer"></canvas>
-    <div class="topbg">
-        <div class="sheild">
-            <div class="t">T</div>
-        </div>
-        <div class="titanium">Titanium</div>
-        <div class="sel-bg-copy">
-            <img src="png/ic-devices.png" srcset="png/ic-devices@2x.png 2x, png/ic-devices@3x.png 3x" class="ic-devices">
-        </div>
-        <div class="css-reset">
+<body>
+    
+<div id="navbar_template"></div> 
+<div id="slider_template"></div> 
+<div id="bottom_template"></div> 
 
-        </div>
-        <div class="sel-bg-copy-disable-playback">
-            <img src="png/playback.png" srcset="png/playback@2x.png 2x, png/playback@3x.png 3x" class="playback">
-        </div>
-        <div class="sel-bg-copy-disable-setting">
-            <img src="png/system.png" srcset="png/system@2x.png 2x, png/system@3x.png 3x" class="system">
-        </div>
-        <div class="sel-bg-copy-disable-question">
-            <img src="png/ellipse-5.png" srcset="png/ellipse-5@2x.png 2x, png/ellipse-5@3x.png 3x" class="ellipse-5">
-        </div>
+<div>
+    <img src="png/panic.png" srcset="png/panic@2x.png 2x, png/panic@3x.png 3x" class="rectangle-47">
+</div>
 
-        <select class="rounded-rectangle-1136-stream">
-            <option value="Stream1" class="stream">Stream1</option>
-            <option value="Stream2" class="stream">Stream2</option>
-            <option value="Stream3" class="stream">Stream3</option>
-            <option value="Stream4" class="stream">Stream4</option>
-        </select>
+<canvas class="live-view" id="webPlayer"></canvas>
 
-        <select class="rounded-rectangle-1136-language">
-            <option value="English" >English</option>
-            <option value="Chinese" >Chinese</option>
-            <option value="French" >French</option>
-            <option value="German" >German</option>
-            <option value="Japanese" >Japanese</option>
-            <option value="Korean" >Korean</option>
-            <option value="Russian" >Russian</option>
-        </select>
-
-        <div class="nor">
-            <img src="" class="login">
-        </div>
-    </div>
-    <div class="rectangle-861">
-        <img src="png/ic-mic-on.png" srcset="png/ic-mic-on@2x.png 2x, png/ic-mic-on@3x.png 3x" class="ic-mic-on">
-        <img src="png/ic-audio-on.png" srcset="png/ic-audio-on@2x.png 2x, png/ic-audio-on@3x.png 3x" class="ic-sound-on">
-        <img src="png/ic-snapshot.png" srcset="png/ic-snapshot@2x.png 2x, png/ic-snapshot@3x.png 3x" class="ic-picture-on">
-        <img src="png/ic-ptz.png" srcset="png/ic-ptz@2x.png 2x, png/ic-ptz@3x.png 3x" class="ic-position-on">
-        <img src="png/ic-zoom.png" srcset="png/ic-zoom@2x.png 2x, png/ic-zoom@3x.png 3x" class="ic-zoom-on">
-        <img src="png/ic-trigger.png" srcset="png/ic-trigger@2x.png 2x, png/ic-trigger@3x.png 3x" class="ic-emergency-on">
-        <img src="png/ic-relay-output.png" srcset="png/ic-relay-output@2x.png 2x, png/ic-relay-output@3x.png 3x" class="ic-event-on">
-        <img src="" class="ic-vca-on">
-        <img src="png/ic-quick-set.png" srcset="png/ic-quick-set@2x.png 2x, png/ic-quick-set@3x.png 3x" class="ic-setting-on">
-        <img src="png/ic-maiximize.png" srcset="png/ic-maiximize@2x.png 2x, png/ic-maiximize@3x.png 3x" class="ic-expand-on">
-        <div class="vca">VCA</div>
-    </div>
-
-    <div class="layer-1529">
-        <div class="stream-setting-title">Stream 1 Setting</div>
-        <div class="codec-resolution-bitrate-control">Codec
-            Resolution
-            Bitrate control</div>
-        <div class="bitrate-framerate-gop-size-1-60">Bitrate
-            Framerate
-            GOP size (1~60)</div>
-        <select class="rounded-rectangle-1136-setting-codec">
-            <option>H.264 Baseline Profile</option>
-        </select>
-        <select class="rounded-rectangle-1136-setting-resolution">
-            <option>1920x1080</option>
-        </select>
-        <select class="rounded-rectangle-1136-setting-bitrate">
-            <option>4000 Kpbs</option>
-        </select>
-        <select class="rounded-rectangle-1136-setting-framerate">
-            <option>30</option>
-        </select>
-        <select class="rounded-rectangle-1136-setting-gop-size">
-            <option>15</option>
-        </select>
-
-        <div class="radio-vbr">
-            <input type="checkbox">
-            <label class="vbr">VBR</label>
-        </div>
-
-        <div class="radio-cvbr">
-            <input type="checkbox">
-            <label class="cvbr">CVBR</label>
-        </div>
-
-        <div>
-            <button class="rectangle-3-save"></button>
-            <label class="save">Save</label>
-        </div>
-
-        <div>
-            <button class="rectangle-3-reset"></button>
-            <label class="reset">Reset</label>
-        </div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
 
-    </div>
-    <div class="bg-mic">
-        <label class="bg-mic-level">75</label>
-        <img src="png/ic-mic-on.png" srcset="png/ic-mic-on@2x.png 2x, png/ic-mic-on@3x.png 3x" class="ic-mic-on-copy">
-        <input type="range" class="ic-mic-slide"/>
-    </div>
-    <div class="bg-sound">
-        <label class="bg-sound-level">75</label>
-        <img src="png/ic-audio-on.png" srcset="png/ic-audio-on@2x.png 2x, png/ic-audio-on@3x.png 3x" class="ic-audioo-on-copy">
-        <input type="range" class="ic-audio-slide"/>
-    </div>
+<script src="../Bootstrap/js/jquery.min.js"></script>
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
 
-    <div class="bg-copy-6"></div>
-
-    <div>
-        <img src="png/ptz-default-plus-nor.png" srcset="png/ptz-default-plus-nor@2x.png 2x, png/ptz-default-plus-nor@3x.png 3x" class="ellipse-10-copy-4">
-        <img src="png/ptz-default-minus-nor.png" srcset="png/ptz-default-minus-nor@2x.png 2x, png/ptz-default-minus-nor@3x.png 3x" class="bg-copy-10">
-        <img src="png/ptz-default-far-nor.png" srcset="png/ptz-default-far-nor@2x.png 2x, png/ptz-default-far-nor@3x.png 3x" class="bg-copy-11">
-        <img src="png/ptz-default-near-nor.png" srcset="png/ptz-default-near-nor@2x.png 2x, png/ptz-default-near-nor@3x.png 3x" class="bg-copy-12">
-        <img src="png/ptz-default-open-nor.png" srcset="png/ptz-default-open-nor@2x.png 2x, png/ptz-default-open-nor@3x.png 3x" class="bg-copy-13">
-        <img src="png/ptz-default-close-nor.png" srcset="png/ptz-default-close-nor@2x.png 2x, png/ptz-default-close-nor@3x.png 3x" class="bg-copy-4">
-        <img src="png/center-point-bg-nor.png" srcset="png/center-point-bg-nor@2x.png 2x, png/center-point-bg-nor@3x.png 3x" class="ellipse-9">
-    </div>
-    <script>
-        var webConnection = new WebConnection("ws://192.168.0.12/jpeg/1/jpeg_stream.websock", "admin", "admin");
-        var jpegPlayer = new JpegPlayManager("webPlayer")
-        webConnection.ConnectToServer()
-
-    </script>
+<script>
+    $( "#navbar_template" ).load( "_TopNav.html", function() {});
+    $( "#slider_template" ).load( "_DropSlider.html", function() {});
+    $( "#bottom_template" ).load( "_ViewBottomBar.html", function() {});
+</script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script>
+    var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
+    var jpegPlayer = new JpegPlayManager("webPlayer")
+    webConnection.ConnectToServer()
+</script>
 </body>
 </html>
