@@ -12,8 +12,8 @@
   .seven-cols .col-md-1,
   .seven-cols .col-sm-1,
   .seven-cols .col-lg-1 {
-    width: 14.21%;
-    *width: 14.21%;
+    width: calc(14.28571428571429% - 6px);
+    *width: calc(14.28571428571429% - 6px);
   }
 }
 
@@ -22,8 +22,8 @@
   .seven-cols .col-md-1,
   .seven-cols .col-sm-1,
   .seven-cols .col-lg-1 {
-    width: 14.21%;
-    *width: 14.21%;
+    width: calc(14.28571428571429% - 6px);
+    *width: calc(14.28571428571429% - 6px);
   }
 }
 
