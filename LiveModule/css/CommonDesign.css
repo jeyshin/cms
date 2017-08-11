@@ -66,7 +66,24 @@ html {
 }
 
 /*
+
+    GENERIC BUTTONS AND OTHER ELEMENTS
+
+*/
+.btn-collab {
+    height: 21px;
+    background-color:transparent;
+    font-family: NanumGothic;
+    color: #fafafa;
+    font-size: 14px;
+    transition: 0.1s;
+    border-radius: 0px;
+}
+
+/*
+
     NAVIGATION BAR AND ITS ELEMENTS
+
 */
 .dropnav-setting {
     position: fixed;
@@ -237,7 +254,9 @@ html {
 
 
 /*
+
     BOTTOM STATUS BAR AND ITS ELEMENTS
+
 */
 .bar-bottom {
     position: absolute;

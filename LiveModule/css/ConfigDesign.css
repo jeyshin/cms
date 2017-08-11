@@ -48,10 +48,12 @@ body {
     border-bottom: 2px solid #3b536a; 
     /*background-color: #081723;*/ /*We're just trying to see the border of this shit*/
 }
-.setting-buttons .btn-group{
+
+.btn_conavgroup{
     margin-left: 40px;
 }
-.setting-buttons .btn-group .btn{
+
+.btn-confignav {
     height: 40px;
     background-color:transparent;
     font-family: NanumGothic;
@@ -60,16 +62,21 @@ body {
     transition: 0.1s;
     border-radius: 0px;
 }
-.setting-buttons .btn-group .btn:hover{
+
+.btn-confignav:hover{
     color: #0a85ed;
     transition: 0.1s;
     border-bottom: 2px solid #0a85ed; 
 }
-.setting-buttons .btn-group .btn:active{
+
+.btn-confignav:active, .btn-confignav.active{
     color: #0a85ed;
     transition: 0.1s;
     border-bottom: 2px solid #0a85ed; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
 }
+
 .setting-contents {
     height: calc(100% - 165px);
 }
@@ -93,6 +100,7 @@ body {
     text-decoration: none;
     transition: 0.1s;
 }
+
 .setting-contents .body .desc:hover {
     color: #0a85ed;
     transition: 0.1s;

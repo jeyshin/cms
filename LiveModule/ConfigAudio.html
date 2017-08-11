@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../Bootstrap/css/navbar-fixed-top.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/CommonDesign.css">
+    <link rel="stylesheet" type="text/css" href="css/ConfigDesign.css">
+    <script src="js/Utils/Logger.js"></script>
+    <script src="js/Settings/DefineManager.js"></script>
+    <script src="../Bootstrap/js/jquery.min.js"></script>
+    <style>
+        .table-hitron {
+            font-family: NanumGothic;
+            color: #fafafa;
+        }
+
+        .table-hitron > thead > tr > th {
+            background-color: #051019;
+            height: 42px;
+            font-size: 12px;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #112130;
+            border-bottom: 1px solid #112130;
+        }
+
+        .table-hitron > tbody > tr > td {
+            background-color: #081723;
+            vertical-align: middle;
+            font-size: 11px;
+            height: 30px;
+            border-bottom: 1px solid #112130;
+        }
+
+        .centered {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .btn-type1 {
+            width: 100px;
+            height: 28px;
+            background-color: #3b536a;
+
+            font-family: NanumGothic;
+            font-size: 11px;
+            line-height: 1.1;
+            text-align: center;
+            color: #fafafa;
+            border-radius: 0px;
+        }
+        .btn-type1:hover {
+            background-color: #3b536a;
+            border: solid 1px #0a85ed;
+            color: #fafafa;
+        }
+        .btn-type1:active {
+            background-color: #0a85ed;
+            color: #fafafa;
+        }
+        .btn-type1:focus {
+            background-color: #064172;
+            color: #fafafa;
+        }
+
+
+        .btn-collab {
+            background-color:transparent;
+            font-family: NanumGothic;
+            color: #fafafa;
+            font-size: 22px;
+            transition: 0.1s;
+            border-radius: 0px;
+            padding: 0px;
+            padding-right: 10px;
+            outline:none;
+        }
+
+        .btn-collab:hover {
+            color: #aabece;
+        }
+
+        .btn-collab:active {
+            color: #0a85ed;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .btn-collab:focus {
+            -webkit-box-shadow: none; 
+            box-shadow: none;
+        }
+        
+        .colgroup {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .rightgroup {
+            float: right;
+        }
+        
+        .addgap {
+            margin-top: 80px;
+        }
+
+        .collabgroup {
+            width: 100%;
+            height: 40px;
+            left: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+            vertical-align: middle;
+        }
+
+        .checks {position: relative;}
+
+        .checks input[type="checkbox"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip:rect(0,0,0,0);
+            border: 0
+        }
+
+        .checks input[type="checkbox"] + label {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            font-family: NanumGothic;
+            mix-blend-mode: screen;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #fafafa;
+        }
+
+        .checks input[type="checkbox"] + label:before {
+            content: ' ';
+            display: inline-block;
+            width: 20px; 
+            height: 20px; 
+            line-height: 21px; 
+            margin: -2px 8px 0 0;
+            text-align: center; 
+            vertical-align: middle;
+            background: #081723;
+            border: 1px solid #1c2d3f;
+        }
+
+        .checks input[type="checkbox"] + label:active:before,
+        .checks input[type="checkbox"]:checked + label:active:before {
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .checks input[type="checkbox"]:checked + label:before {
+            content: url('png/ic-check-on-nor.png');
+            color: #99a1a7;
+            text-shadow: 1px 1px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+<div id="navbar_template"></div> 
+<div id="layout_template"></div> 
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="../Bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+    $( "#navbar_template" ).load( "_TopNav.html", function() {});
+    $( "#layout_template" ).load( "_SettingLayout.html", function() {
+        $( "#setting_template" ).load( "_SettingAudio.html", function() {});
+    });
+</script>
+
+</body>
+</html>

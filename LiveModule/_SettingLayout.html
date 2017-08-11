@@ -8,20 +8,16 @@
     </div>
 
     <div class="setting-buttons">
-        <div class="btn-group">
-            <button type="button" class="btn">Information</button>
-            <button type="button" class="btn">Users</button>
-            <button type="button" class="btn">Network</button>
-            <button type="button" class="btn">Video & Image</button>
-            <button type="button" class="btn">Audio</button>
-            <button type="button" class="btn">Date & Time</button>
+        <div class="btn-group btn_conavgroup">
+            <div class="btn btn-confignav active">Information</div>
+            <div class="btn btn-confignav">Users</div>
+            <div class="btn btn-confignav">Network</div>
+            <div class="btn btn-confignav">Video & Image</div>
+            <div class="btn btn-confignav">Audio</div>
+            <div class="btn btn-confignav">Date & Time</div>
         </div>
     </div>
 
     <div class="setting-contents" id="setting_template">
     </div>
 </div> 
-
-<script>
-    $( "#setting_template" ).load( "_SettingInformation.html", function() {});
-</script>
