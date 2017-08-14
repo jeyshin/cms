@@ -59,6 +59,7 @@
 
     var dataTransfer = new DataTransferManager()
     dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "get"}, dataTransfer)
+    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "set", "light": 1}, dataTransfer)
 </script>
 </body>
 </html>
