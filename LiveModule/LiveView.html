@@ -56,6 +56,9 @@
     var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
     var jpegPlayer = new JpegPlayManager("webPlayer")
     webConnection.ConnectToServer()
+
+    var dataTransfer = new DataTransferManager()
+    dataTransfer.JsonToGetParameters({"res": 200, "app": "get"})
 </script>
 </body>
 </html>
