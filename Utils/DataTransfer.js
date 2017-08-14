@@ -42,6 +42,8 @@ DataTransferManager.prototype.CommunicateWithBackendGet = function (url, origina
         },
         error: function(xhr, status, error){
             PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Error: " + error, LOG_LEVEL_ERROR)
+            tempConverter = new DataTransferManager()
+            callbackReciveObject.GetFailedResponseData(tempConverter.GetFailedResponseData(error))
         },
         complete: function(){
             if(isCommunicateSuccess) {
@@ -70,5 +72,9 @@ DataTransferManager.prototype.JsonToGetParameters = function (originalJsonReques
 }
 
 DataTransferManager.prototype.GetResponseData = function (data) {
+    PrintLogMessage("DataTransfer", "GetResponseData", "response ok", LOG_LEVEL_INFO)
+}
 
+DataTransferManager.prototype.GetFailedResponseData = function (error) {
+    PrintLogMessage("DataTransfer", "GetResponseData", "response failed", LOG_LEVEL_WARN)
 }

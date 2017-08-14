@@ -24,6 +24,7 @@
     <script src="js/Core/JpegPlayer.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../Utils/DataTransfer.js"></script>
+    <script src="js/Page/SystemInformationCrawler.js"></script>
 </head>
 
 <body>
@@ -57,9 +58,11 @@
 //    var jpegPlayer = new JpegPlayManager("webPlayer")
 //    webConnection.ConnectToServer()
 
-    var dataTransfer = new DataTransferManager()
-    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "get"}, dataTransfer)
-    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "set", "light": 1}, dataTransfer)
+//    var dataTransfer = new DataTransferManager()
+//    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "get"}, dataTransfer)
+//    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "set", "light": 1}, dataTransfer)
+    var systemInfoCrawler = new SystemInformationCrawler()
+    systemInfoCrawler.GetSystemInfoRequest()
 </script>
 </body>
 </html>
