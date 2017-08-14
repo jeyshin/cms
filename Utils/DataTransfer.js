@@ -25,7 +25,7 @@ DataTransferManager.prototype.CustomJsonToOriginalJson = function (customJsonDat
 
 DataTransferManager.prototype.CommunicateWithBackendGet = function (url, originalJsonRequestData, callbackReciveObject) {
     getParameters = this.JsonToGetParameters(originalJsonRequestData)
-    PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Send url: " + url + " data: " + getParameters, LOG_LEVEL_ERROR)
+    PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Send url: " + url + " data: " + getParameters, LOG_LEVEL_INFO)
 
     isCommunicateSuccess = false
 
