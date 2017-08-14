@@ -23,8 +23,34 @@ DataTransferManager.prototype.CustomJsonToOriginalJson = function (customJsonDat
     return jsonDatas
 } 
 
-DataTransferManager.prototype.CommunicateWithBackend = function (url, originalJsonRequestData, callbackReciveObject) {
-    
+DataTransferManager.prototype.CommunicateWithBackendGet = function (url, originalJsonRequestData, callbackReciveObject) {
+    getParameters = this.JsonToGetParameters(originalJsonRequestData)
+    PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Send url: " + url + " data: " + getParameters, LOG_LEVEL_ERROR)
+
+    isCommunicateSuccess = false
+
+    $.ajax({
+        url: url,
+        type: "GET",
+        data: getParameters,
+        dataType: "html",
+        success: function(data,status,xhr){
+            PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "recv data: " + data, LOG_LEVEL_INFO)
+            isCommunicateSuccess = true
+            recvJsonData = this.CustomJsonToOriginalJson(data)
+        },
+        error: function(xhr, status, error){
+            PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Error: " + error, LOG_LEVEL_ERROR)
+        },
+        complete: function(){
+            if(isCommunicateSuccess) {
+                PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "communicate success", LOG_LEVEL_INFO)
+            }
+            else {
+                PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "communicate failed", LOG_LEVEL_WARN)
+            }
+        }
+    });
 }
 
 DataTransferManager.prototype.JsonToGetParameters = function (originalJsonRequestData) {

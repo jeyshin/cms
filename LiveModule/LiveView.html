@@ -58,8 +58,7 @@
     webConnection.ConnectToServer()
 
     var dataTransfer = new DataTransferManager()
-    dataTransfer.JsonToGetParameters({"res": 200, "app": "get"})
-    dataTransfer.CustomJsonToOriginalJson("res=200&app=get")
+    dataTransfer.CommunicateWithBackendGet('system/check_hardware.php', {"app": "get"})
 </script>
 </body>
 </html>
