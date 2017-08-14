@@ -1,5 +1,6 @@
 function LiveLightControl() {
     this.dataTransferManager = new DataTransferManager()
+    this.flag = false
 }
 
 LiveLightControl.prototype.GetLiveLightData = function () {
@@ -15,6 +16,10 @@ LiveLightControl.prototype.SetLightStatusAndLevel = function (lightStatus, light
 
 LiveLightControl.prototype.GetResponseData = function (data) {
     PrintLogMessage("LiveLightControl", "GetResponseData", "can u see me?", LOG_LEVEL_INFO)
+    if(this.flag == false) {
+        this.flag = true
+        this.GetLiveLightData()
+    }
 }
 
 LiveLightControl.prototype.GetFailedResponseData = function (error) {
