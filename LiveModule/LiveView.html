@@ -53,12 +53,12 @@
 </script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script>
-    var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
-    var jpegPlayer = new JpegPlayManager("webPlayer")
-    webConnection.ConnectToServer()
+//    var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
+//    var jpegPlayer = new JpegPlayManager("webPlayer")
+//    webConnection.ConnectToServer()
 
     var dataTransfer = new DataTransferManager()
-    dataTransfer.CommunicateWithBackendGet('system/check_hardware.php', {"app": "get"})
+    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "get"})
 </script>
 </body>
 </html>

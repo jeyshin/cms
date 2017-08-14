@@ -37,7 +37,7 @@ DataTransferManager.prototype.CommunicateWithBackendGet = function (url, origina
         success: function(data,status,xhr){
             PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "recv data: " + data, LOG_LEVEL_INFO)
             isCommunicateSuccess = true
-            recvJsonData = this.CustomJsonToOriginalJson(data)
+            recvJsonData = DataTransferManager.CustomJsonToOriginalJson(data)
         },
         error: function(xhr, status, error){
             PrintLogMessage("DataTransfer", "CommunicateWithBackendGet", "Error: " + error, LOG_LEVEL_ERROR)
