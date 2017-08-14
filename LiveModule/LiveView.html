@@ -50,7 +50,7 @@
     <!--Your browser not support video player.-->
 <!--</video>-->
 
-<video id="my-video" class="video-js live-view" controls preload="auto" data-setup="{}">
+<video id="my-video" class="video-js live-view" controls preload="none" data-setup='{"techOrder": ["flash", "html5", "other supported tech"], "nativeControlsForTouch": true, "controlBar": { "muteToggle": false, "volumeControl": false, "timeDivider": false, "durationDisplay": false, "progressControl": false } }'>
     <source src="rtsp://192.168.0.129/1/stream1" type='rtsp/mp4'>
     <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a web browser that
