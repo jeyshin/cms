@@ -1,0 +1,789 @@
+/*
+   Contents Table/Table SCroll
+*/
+.table-hitron {
+    font-family: NanumGothic;
+    color: #fafafa;
+    border: 1px solid #112130;
+}
+
+.table-hitron > thead > tr > th {
+    background-color: #051019;
+    height: 42px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #112130;
+    border-bottom: 1px solid #112130;
+}
+
+.table-hitron > tbody > tr > td {
+    background-color: #081723;
+    vertical-align: middle;
+    font-size: 11px;
+    height: 30px;
+    border-bottom: 1px solid #112130;
+}
+
+.table-hitron > tbody > tr > td.nontext {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*
+   Contents Tab
+*/
+
+.setting-buttons {
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    margin-top: 5px;
+    border-bottom: 1px solid #3b536a; 
+    
+    /* lol hacks */
+    background-position: 0px, 0px;
+    background-image: linear-gradient(#051019, #051019);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.btn-group.navgroup {
+    margin-left: 40px;
+}
+
+.btn-confignav {
+    height: 40px;
+    background-color:transparent;
+    font-family: NanumGothic;
+    color: #fafafa;
+    font-size: 14px;
+    transition: 0.1s;
+    border-radius: 0px;
+}
+
+.btn-confignav:hover{
+    color: #fafafa;
+}
+
+.btn-confignav:active {
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+.btn-confignav.active{
+    color: #0a85ed;
+    border-bottom: 2px solid #0a85ed; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+/*
+    Live Event
+*/
+
+/*
+    Dropdown
+*/
+.dropdown-menu {
+    width: 120px;
+    height: 28;
+    background-color: #3b536a;
+    border-radius: 0px;
+    padding: 0px;
+    min-width: 120px;
+}
+
+.dropdown-menu > li {
+    height: 22px;
+    font-size: 11px;
+}
+.dropdown-menu > li > a {
+    font-family: NanumGothic;
+    color: #fafafa;
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    padding-left: 11px;
+    padding-top: 3px;
+    background-color: #3b536a;
+    color: #fafafa;
+    border: solid 1px #0a85ed;
+}
+.dropdown-menu > li > a:active {
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #064172;
+    border: none;
+    color: #fafafa;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background-color: #0a85ed;
+    color: #fafafa;
+}
+
+/*
+    Value Slider
+*/
+input[type=range] {
+    margin: auto;
+    outline: none;
+    padding: 0;
+    width: 50%;
+    height: 6px;
+    background-color: #051019;
+    background-position: 1px, 1px;
+    background-image: linear-gradient(#0a85eb, #0a85eb);
+    background-size: 50% calc(100% - 2px);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    float: left;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=range]::-moz-range-track {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    -webkit-appearance: none;
+}
+input[type=range]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    background: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 2px #0a85eb;
+}
+input[type=range]::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 2px #0a85eb;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    box-shadow: 0 0 0 4px rgba(10, 133, 235, 0.5);
+}
+input[type=range]::-moz-range-thumb:active {
+    box-shadow: 0 0 0 4px rgba(10, 133, 235, 0.5);
+}
+
+input[type=range].disabled {
+    background-size: 0;
+    background-color: #051019;
+    background-image: #051019;
+    height: 6px;
+    pointer-events: none;
+}
+input[type=range].disabled::-webkit-slider-thumb {
+    background-image: linear-gradient(#5e6b75, #768693);
+    pointer-events: none;
+}
+input[type=range].disabled::-moz-range-thumb {
+    background-image: linear-gradient(#5e6b75, #768693);
+    pointer-events: none;
+}
+/*
+    Bottom Icon Buttons
+*/
+
+/*
+    Modals
+*/
+.form-horizontal .form-group {
+    margin: 0px;
+}
+.form-horizontal .control-label {
+  font-family: NanumGothic;
+  font-size: 11px;
+  text-align: left;
+  color: #aabece;
+  line-height: 1.82;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-header .close {
+    width: 12px;
+    height: 12px;
+    filter: none;
+    opacity: 1;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../png/ic-popup-close.png);
+
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+    filter: none;
+    opacity: 1;
+}
+
+.modal-dialog.small {
+    width: 316px;
+    height: 142px;
+}
+
+.modal-title {
+    line-height: 1;
+}
+
+.modal-content {
+    background-color: #112130;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border: solid 1px #3b536a;
+    border-radius: 0;
+    margin: 0px;
+}
+
+.modal-header {
+    background-color: #051019;
+    border: none;
+    margin: 0px;
+    padding: 15px;
+    margin: 0px;
+    vertical-align: middle;
+}
+.modal-body {
+    border: none;
+    padding: 20px;
+    margin: 0px;
+}
+.modal-body p {
+    font-size: 11px;
+    font-family: NanumGothic, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    line-height: 1;
+}
+.modal-footer {
+    border: none;
+    border-top: solid 1px #3b536a;
+    padding: 8px;
+    margin: 0px;
+    text-align: center;
+}
+.modal-title {
+    font-size: 12px;
+    font-family: NanumGothic, sans-serif;
+}
+
+.btn.btn-type2.btn-modal {
+    width: 134px;
+    height: 34px;
+    padding: 11px;
+    line-height: 1;
+}
+
+/*
+    Playback Icons
+*/
+
+/*
+    Generic Icons
+*/
+
+.ico-warning {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-right: 4px;
+}
+
+/*
+    Date/Time Selectors
+*/
+.picker-switch {
+    font-size: 22px;
+}
+
+.datepicker {
+    padding: 10px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.btn-timebar {
+  margin-left: 0px;
+  border-top: 1px solid #3b536a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+    background: none;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    background-color: #112130;
+    box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border: solid 1px #3b536a;
+    font-family: NanumGothic, sans-serif;
+    font-size: 10px;
+    color: #fafafa;
+    padding: 0;
+    width: 306px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+    content: none;
+}
+
+/* get rid of carots! */
+.bootstrap-datetimepicker-widget table td {
+    font-size: 13px;
+    border-radius: 0px;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+    content: none;
+}
+
+.bootstrap-datetimepicker-widget table td:before {
+    content: none;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover {
+    background: transparent;
+    border-radius: 0;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background-color: #0a85eb;
+    color: #fafafa;
+    text-shadow: none;
+    border-radius: 0;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+    cursor: pointer;
+}
+
+/*
+    PTZ Menu Bottom Icons
+*/
+
+/*
+    Button Type 1
+*/
+.btn.btn-dropdown {
+    background-color: #112130;
+
+    width: 120px;
+    height: 28px;
+
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: left;
+    color: #fafafa;
+    border-radius: 0px;
+
+    background-image: url("../png/dropdown-arrow-up.png");
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 13px);
+}
+
+.open .btn-dropdown {
+    background-color: #0a85ed;
+    background-image: url("../png/dropdown-arrow-down.png");
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 13px);
+}
+
+.btn-dropdown:focus,
+.btn-dropdown:hover {
+    background-color: #064172;
+    color: #fafafa;
+}
+
+.btn-dropdown:active {
+    line-height: 1.3;
+    border: none;
+    background-color: #0a85ed;
+    color: #fafafa;
+}
+/*
+    Button Type 1
+*/
+.btn-type1 {
+    width: 100px;
+    height: 28px;
+    background-color: #3b536a;
+
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fafafa;
+    border-radius: 0px;
+}
+
+.btn-type1:hover {
+    background-color: #3b536a;
+    border: solid 1px #0a85ed;
+    color: #fafafa;
+}
+
+.btn-type1:active {
+    line-height: 1.3;
+    border: none;
+    background-color: #064172;
+    color: #fafafa;
+}
+
+/*
+    Button Type 1
+*/
+.btn-type2 {
+    width: 100px;
+    height: 28px;
+    background-color: #051019;
+
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fafafa;
+    border-radius: 0px;
+}
+.btn-type2:hover {
+    border: solid 1px #0a85ed;
+    color: #fafafa;
+}
+.btn-type2:active {
+    line-height: 1.3;
+    background-color: #064172;
+    border: none;
+    color: #fafafa;
+}
+
+/*
+    Button Type 3
+*/
+.btn-type3 {
+    width: 100px;
+    height: 28px;
+    background-color: #0a85ed;
+
+    font-family: NanumGothic;
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: center;
+    color: #fafafa;
+    border-radius: 0px;
+}
+.btn-type3:hover {
+    background-color: #3b536a;
+    color: #fafafa;
+}
+.btn-type3:active {
+    line-height: 1.3;
+    background-color: #064172;
+    border: none;
+    color: #fafafa;
+}
+
+/*
+        NO Margin for the input elements in the table/other containers. 
+        It will only be used for single element without the label.
+*/
+.nomargin {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+    Checkbox CSS Style
+*/
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:#fafafa;
+    font-size: 14px;
+    font-family:NanumGothic, sans-serif;
+}
+
+input[type="checkbox"].disabled + label {
+    color:rgba(250, 250, 250, 0.2);
+    pointer-events: none;
+}
+
+input[type="checkbox"]:checked.disabled + label span {
+    
+    background-image: url('../png/ic-check-on-dis.png') ;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    background: #081723;
+    border: 1px solid #1c2d3f;
+}
+
+/* seems ugly but it's fixed also it will be perfect fit for the requested design */
+input[type="checkbox"]:checked + label span {
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-bottom: 4px;
+    padding-right: 1px;
+
+    background-image: url('../png/ic-check-on-nor.png') ;
+    background-size: 16px 12px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+}
+
+/*
+    Radio CSS Style
+*/
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#fafafa;
+    font-size: 14px;
+    font-family:NanumGothic, sans-serif;
+}
+
+input[type="radio"].disabled + label {
+    pointer-events: none;
+}
+
+input[type="radio"]:checked.disabled + label span {
+    background-image: url('../png/ic-radio-on-dis.png') ;
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+}
+
+input[type="radio"] + label span {
+	border-radius: 50%;
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    background-color: #081723;
+    border: 1px solid #1c2d3f;
+}
+
+input[type="radio"]:checked + label span {
+    background-image: url('../png/ic-radio-on-nor.png') ;
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+
+    padding: 4px; /* Substracted Outline Thickness. */
+}
+
+/*
+    Text Input
+*/
+input[type=text], select,
+input[type=password], select {
+    height: 28px;
+    padding: 9px 14px;
+    margin: 8px 0;
+    display: inline-block;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+
+    background: #081723;
+    border: 0px none;
+    font-size: 11px;
+    font-family: NanumGothic, sans-serif;
+    color: #fafafa;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    padding: 8px 13px; /* Substracted Outline Thickness, This will prevent text moving around when selected! */
+    outline: none;
+    border: 1px solid #0a85ed;
+}
+
+/* This component has width issue! You have to substract 20px before you use this search form! like width: calc(100% - 20px)*/
+input.search{
+    background-color: #081723;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+
+    background-image: url("../png/ic-search-nor.png");
+    padding-right: 20px;
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px);
+}
+input.search:focus{
+    background-color: #081723;
+    
+    background-image: url("../png/ic-search-nor.png");
+    padding-right: 20px;
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px);
+}
+
+/*
+    Selection Slider.
+*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 14px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a4f8a;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -5px;
+    bottom: -3px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 50%;
+    background-color: #fafafa;
+    background-position: calc(50% - 0px) calc(50% - 0px);
+    background-image: url("../png/ic-switch-off.png");
+}
+
+input:checked + .slider:before {
+    background-color: #fafafa;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-image: url("../png/ic-switch-on.png");
+}
+
+/*
+    Collabsable stuffs
+    NEED TO THINK A WAY TO MAKE IT GOOD
+*/
+.btn-collab {
+    background-color:transparent;
+    font-family: NanumGothic;
+    color: #fafafa;
+    font-size: 22px;
+    transition: 0.1s;
+    border-radius: 0px;
+    padding: 0px;
+    padding-right: 10px;
+    outline:none;
+}
+
+.btn-collab:hover {
+    color: #aabece;
+}
+
+.btn-collab:active {
+    color: #0a85ed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-collab > img {
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.btn-collab.collapsed > img {
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.btn-collab:focus {
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}

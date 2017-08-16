@@ -143,7 +143,7 @@ html {
     left: 412px;
     width: 70px;
     height: 60px;
-    background-color: #00000000;
+    background-color: #000000;
     /* More Fancier, more Smoother.*/
     -webkit-transition-duration: 0.2s; 
     transition-duration: 0.2s;
@@ -164,7 +164,7 @@ html {
     width: 30px;
     height: 20px;
     object-fit: contain;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-playback {
@@ -174,7 +174,7 @@ html {
     width: 24px;
     height: 22px;
     object-fit: contain;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-system {
@@ -184,7 +184,7 @@ html {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-help {
@@ -194,7 +194,7 @@ html {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .dropdown-stream {
@@ -249,7 +249,7 @@ html {
     width: 16px;
     height: 22px;
     border-radius: 5px;
-    background-color: #00f8f8f8;
+    background-color: #f8f8f8;
 }
 
 
@@ -300,7 +300,7 @@ html {
     left: 9px;
     width: 18px;
     height: 18px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-picture-on-position {
@@ -315,7 +315,7 @@ html {
     left: 9px;
     width: 20px;
     height: 20px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-position-on-position {
@@ -330,7 +330,7 @@ html {
     left: 9px;
     width: 15px;
     height: 15px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-zoom-on-position {
@@ -345,7 +345,7 @@ html {
     left: 8px;
     width: 20px;
     height: 18px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-emergency-on-position {
@@ -360,7 +360,7 @@ html {
     left: 9px;
     width: 18px;
     height: 18px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-event-on-position {
@@ -375,7 +375,7 @@ html {
     left: 11px;
     width: 18px;
     height: 18px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-vca-on-position {
@@ -404,7 +404,7 @@ html {
     left: 9px;
     width: 18px;
     height: 18px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .ic-setting-on-position {
@@ -419,8 +419,8 @@ html {
     left: 9px;
     width: 20px;
     height: 16px;
-    background-color: #00fafafa;
-    border: solid 2px #00fafafa;
+    background-color: #fafafa;
+    border: solid 2px #fafafa;
 }
 
 .ic-expand-on-position {
@@ -435,9 +435,8 @@ html {
     left: 0px;
     width: 100%;
     height: calc(100% - 102px);
-    background-color: #00000000;
+    background-color: #000000;
 }
-
 .layer-1529 {
     position: absolute;
     top: 60px;
@@ -631,7 +630,7 @@ html {
     width: 14px;
     height: 24px;
     border-radius: 3px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .bg-sound {
@@ -662,12 +661,9 @@ html {
     left: 9px;
     width: 20px;
     height: 19px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
-input[type="range"]  {
-    transform: rotate(90deg);
-}
 .ic-mic-slide {
     position: absolute;
     top: 38px;
@@ -700,7 +696,7 @@ input[type="range"]  {
     width: 48.7px;
     height: 43.5px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .bg-copy-10 {
@@ -710,7 +706,7 @@ input[type="range"]  {
     width: 32.8px;
     height: 55.7px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .bg-copy-11 {
@@ -720,7 +716,7 @@ input[type="range"]  {
     width: 47.8px;
     height: 42px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .bg-copy-12 {
@@ -730,7 +726,7 @@ input[type="range"]  {
     width: 48.5px;
     height: 41.6px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .bg-copy-13 {
@@ -740,7 +736,7 @@ input[type="range"]  {
     width: 33.1px;
     height: 56.6px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .bg-copy-4 {
@@ -750,7 +746,7 @@ input[type="range"]  {
     width: 49.4px;
     height: 43.1px;
     opacity: 0.6;
-    background-color: #00000000;
+    background-color: #000000;
 }
 
 .ellipse-9 {
@@ -759,7 +755,7 @@ input[type="range"]  {
     left: 691px;
     width: 34px;
     height: 34px;
-    background-color: #00fafafa;
+    background-color: #fafafa;
 }
 
 .logo {
