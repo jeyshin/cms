@@ -1,3 +1,4 @@
+// Slider Value
 $('input[type=range]').on('input', function(e){
     if (this.className != 'disabled')
     {
