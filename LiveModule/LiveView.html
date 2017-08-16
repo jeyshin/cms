@@ -34,7 +34,6 @@
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
     <script src="../Lib/videojs-contrib-hls.min.js"></script>
-    <script src="../Lib/streamedian.js"></script>
 </head>
 
 <body>
@@ -62,12 +61,20 @@
     <!--<video id="video" class="live-view" autoplay>-->
         <!--<source src="rtsp://192.168.0.129/1/stream1" type="video/mp4">-->
     <!--</video>-->
-    <video id="test_video" controls autoplay>
-        <source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">
-    </video>
+    <!--<video id="test_video" controls autoplay>-->
+        <!--<source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">-->
+    <!--</video>-->
+    <!--<iframe class="live-view" src="rtsp://192.168.0.129/1/stream1"></iframe>-->
+    <!--<video autoplay controls="controls" class="live-view">-->
+        <!--<source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp"/>-->
+    <!--</video>-->
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<video id="test_video" class="live-view" controls autoplay>
+    <source src="rtsp://184.72.239.149/vod/mp4:BigBuckBunny_175k.mov" type="application/x-rtsp">
+</video>
+<script src="../Lib/example/streamedian.js"></script>
 
 
 <script src="../Bootstrap/js/jquery.min.js"></script>
@@ -97,10 +104,10 @@
 //    var player = videojs('my-video');
 //    player.play();
 
-    var video = document.getElementById("video")
-    videoUrl = window.URL || window.WebkitURL
-
-    PrintLogMessage("test", "test", "url: " + window.URL + " web: " + window.WebkitURL, LOG_LEVEL_INFO)
+//    var video = document.getElementById("video")
+//    videoUrl = window.URL || window.WebkitURL
+//
+//    PrintLogMessage("test", "test", "url: " + window.URL + " web: " + window.WebkitURL, LOG_LEVEL_INFO)
 
 
 </script>
