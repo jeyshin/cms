@@ -37,43 +37,21 @@
 </head>
 
 <body>
-    
-<div id="navbar_template"></div> 
-<div id="slider_template"></div> 
-<div id="bottom_template"></div> 
+
+<video id="test_video" class="live-view" controls autoplay>
+    <source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">
+</video>
 
 <div>
     <img src="png/panic.png" srcset="png/panic@2x.png 2x, png/panic@3x.png 3x" class="rectangle-47">
 </div>
 
-<!--<canvas class="live-view" id="webPlayer"></canvas>-->
-<!--<video class="live-view" controls autoplay src="rtsp://192.168.0.129/1/stream1">-->
-    <!--Your browser not support video player.-->
-<!--</video>-->
+<div id="navbar_template"></div> 
+<div id="slider_template"></div> 
+<div id="bottom_template"></div>
+<div id="side_setting_menu"></div>
 
-<!--<video id="my-video" class="video-js live-view" controls preload="none" data-setup='{"techOrder": ["flash", "html5", "other supported tech"], "nativeControlsForTouch": true, "controlBar": { "muteToggle": false, "volumeControl": false, "timeDivider": false, "durationDisplay": false, "progressControl": false } }'>-->
-    <!--<source src="rtsp://192.168.0.129/1/stream1" type='rtsp/mp4'>-->
-    <!--<p class="vjs-no-js">-->
-        <!--To view this video please enable JavaScript, and consider upgrading to a web browser that-->
-        <!--<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>-->
-    <!--</p>-->
-<!--</video>-->
-    <!--<video id="video" class="live-view" autoplay>-->
-        <!--<source src="rtsp://192.168.0.129/1/stream1" type="video/mp4">-->
-    <!--</video>-->
-    <!--<video id="test_video" controls autoplay>-->
-        <!--<source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">-->
-    <!--</video>-->
-    <!--<iframe class="live-view" src="rtsp://192.168.0.129/1/stream1"></iframe>-->
-    <!--<video autoplay controls="controls" class="live-view">-->
-        <!--<source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp"/>-->
-    <!--</video>-->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<video id="test_video" class="live-view" controls autoplay>
-    <source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">
-</video>
+
 <script src="../Lib/example/streamedian.js"></script>
 
 
@@ -84,31 +62,17 @@
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
     $( "#slider_template" ).load( "_DropSlider.html", function() {});
     $( "#bottom_template" ).load( "_ViewBottomBar.html", function() {});
+    $( "#side_setting_menu" ).load( "_SideSettingMenu.html", function () {});
 </script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script>
-//    var webConnection = new WebConnection("ws://192.168.0.129/jpeg/1/jpeg_stream.websock", "admin", "admin");
-//    var jpegPlayer = new JpegPlayManager("webPlayer")
-//    webConnection.ConnectToServer()
 
-//    var dataTransfer = new DataTransferManager()
-//    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "get"}, dataTransfer)
-//    dataTransfer.CommunicateWithBackendGet('../../system/check_hardware.php', {"app": "set", "light": 1}, dataTransfer)
     var systemInfoCrawler = new SystemInformationCrawler()
     systemInfoCrawler.GetSystemInfoRequest()
 
     var liveLightController = new LiveLightControl()
     //liveLightController.GetLiveLightData()
     liveLightController.SetLightStatusAndLevel(1, 10)
-
-//    var player = videojs('my-video');
-//    player.play();
-
-//    var video = document.getElementById("video")
-//    videoUrl = window.URL || window.WebkitURL
-//
-//    PrintLogMessage("test", "test", "url: " + window.URL + " web: " + window.WebkitURL, LOG_LEVEL_INFO)
-
 
 </script>
 </body>
