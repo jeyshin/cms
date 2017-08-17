@@ -14,3 +14,7 @@ EventListener.prototype.OpenOrCloseSideSettingMenu = function () {
     }
     this.isSideSettingMenuOpened = !this.isSideSettingMenuOpened
 }
+
+EventListener.prototype.ChangeStream = function () {
+    
+}
