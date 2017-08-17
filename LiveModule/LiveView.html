@@ -34,6 +34,7 @@
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <script src="http://vjs.zencdn.net/5.8.8/video.js"></script>
     <script src="../Lib/videojs-contrib-hls.min.js"></script>
+    <script src="js/ViewManager/EventListener.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
     $( "#slider_template" ).load( "_DropSlider.html", function() {});
     $( "#bottom_template" ).load( "_ViewBottomBar.html", function() {});
-    $( "#side_setting_menu" ).load( "_SideSettingMenu.html", function () {});
+//    $( "#side_setting_menu" ).load( "_SideSettingMenu.html", function () {});
 </script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script>
@@ -73,6 +74,8 @@
     var liveLightController = new LiveLightControl()
     //liveLightController.GetLiveLightData()
     liveLightController.SetLightStatusAndLevel(1, 10)
+
+    var eventListener = new EventListener()
 
 </script>
 </body>
