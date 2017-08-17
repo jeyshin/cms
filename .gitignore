@@ -135,3 +135,5 @@ modules.xml
 
 # End of https://www.gitignore.io/api/webstorm,webstorm+all,webstorm+iml
 .idea/vcs.xml
+.DS_Store
+LiveModule/.DS_Store
