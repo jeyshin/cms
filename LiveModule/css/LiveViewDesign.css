@@ -714,7 +714,7 @@ input[type="range"]  {
 .ellipse-9 {
     position: absolute;
     top: 379px;
-    left: 691px;
+    left: 50%;
     width: 34px;
     height: 34px;
     background-color: #00fafafa;
@@ -766,4 +766,24 @@ ic-bottom:disabled {
     width: 36px;
     height: 42px;
     background-color: #112130;
+}
+
+.shape-3140-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 662px;
+    background-color: #fafafa;
+    border: solid 2px #fafafa;
+}
+
+.shape-3140 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 530px;
+    height: 2px;
+    background-color: #fafafa;
+    border: solid 2px #fafafa;
 }

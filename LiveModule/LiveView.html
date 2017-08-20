@@ -39,9 +39,9 @@
 
 <body>
 
-<video id="test_video" class="live-view" controls autoplay>
-    <source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">
-</video>
+<!--<video id="test_video" class="live-view" controls autoplay>-->
+    <!--<source src="rtsp://192.168.0.129/1/stream1" type="application/x-rtsp">-->
+<!--</video>-->
 
 <div>
     <img src="png/panic.png" srcset="png/panic@2x.png 2x, png/panic@3x.png 3x" class="rectangle-47">
@@ -53,6 +53,7 @@
 <div id="side_setting_menu"></div>
 <div id="mic-option"></div>
 <div id="audio-option"></div>
+<div id="control-option"></div>
 
 
 <script src="../Lib/example/streamedian.js"></script>
@@ -72,6 +73,9 @@
     $( "#audio-option").load( "_AudioVolume.html", function () {
 
     });
+    $( "#control-option").load( "_LiveControl.html", function () {
+        
+    })
 </script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script>
