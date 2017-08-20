@@ -806,3 +806,45 @@ ic-bottom:disabled {
     height: 42px;
     background-color: #112130;
 }
+
+.small-zoom-copy {
+    position: absolute;
+    top: calc(100% - 42px - 158px);
+    left: calc(100% - 218px);
+    width: 218px;
+    height: 158px;
+    background-color: #00000000;
+    border: solid 2px #051019;
+}
+
+.small-zoom-scale {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 34px;
+    height: 9px;
+    font-family: NanumGothic;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 9.17;
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #060f16;
+}
+
+.small-zoom-image {
+    position: absolute;
+    top:22px;
+    left: 22px;
+    width: 174px;
+    height: 104px;
+    border: solid 2px #051019;
+}
+
+.small-zoom-slide {
+    position: absolute;
+    top: 138px;
+    left: 22px;
+    width: 174px;
+    height: 6px;
+}
