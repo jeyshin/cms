@@ -603,7 +603,7 @@ html {
 
 .bg-mic {
     position: absolute;
-    top: 537px;
+    top: calc(100% - 231px);
     left: 6px;
     width: 36px;
     height: 186px;
@@ -670,6 +670,7 @@ html {
     left: 15px;
     height: 6px;
     width: 100px;
+    transform: rotate(270deg);
 }
 
 .ic-audio-slide {

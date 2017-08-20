@@ -631,6 +631,7 @@ input[type="range"]  {
     left: 15px;
     height: 6px;
     width: 100px;
+    transform: rotate(90deg);
 }
 
 .ic-audio-slide {
