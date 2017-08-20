@@ -5,12 +5,12 @@ function LiveLightControl() {
 
 LiveLightControl.prototype.GetLiveLightData = function () {
     PrintLogMessage("LiveLightControl", "GetLiveLightData", "getting light status", LOG_LEVEL_INFO)
-    this.dataTransferManager.CommunicateWithBackendGet('../../live/light_control.php', {"app": "get"}, this)
+    this.dataTransferManager.CommunicateWithBackendGet(PHP_DESTINATION + 'live/light_control.php', {"app": "get"}, this)
 }
 
 LiveLightControl.prototype.SetLightStatusAndLevel = function (lightStatus, lightLevel) {
     PrintLogMessage("LiveLightControl", "SetLightStatusAndLevel", "update light: " + lightStatus + " level: " + lightLevel, LOG_LEVEL_INFO)
-    this.dataTransferManager.CommunicateWithBackendGet('../../live/light_control.php',
+    this.dataTransferManager.CommunicateWithBackendGet(PHP_DESTINATION + 'live/light_control.php',
         {"app": "set", "light_status": lightStatus, "light_level": lightLevel}, this)
 }
 

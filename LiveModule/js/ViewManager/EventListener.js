@@ -27,7 +27,10 @@ EventListener.prototype.ChangeLanguage = function (eventAcceptedTag) {
     PrintLogMessage("EventListener", "ChangeLanguage", "update language", LOG_LEVEL_INFO);
 
     $(eventAcceptedTag).on("click", "li", function (event) {
-        PrintLogMessage("EventListener", "ChangeLanguage", "selected!" + $(this).text(), LOG_LEVEL_INFO)
+        selectedLanuage = $(this).text()
+        PrintLogMessage("EventListener", "ChangeLanguage", "selected!" + selectedLanuage, LOG_LEVEL_INFO)
+        var languageUpdateManager = new LanguageControl()
+        languageUpdateManager.RequestUpdateLanguage(selectedLanuage)
     })
 }
 

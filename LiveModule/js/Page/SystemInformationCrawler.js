@@ -4,7 +4,7 @@ function SystemInformationCrawler() {
 
 SystemInformationCrawler.prototype.GetSystemInfoRequest = function () {
     PrintLogMessage("SystemInformationCrawler", "GetSystemInfoRequest", "Send request", LOG_LEVEL_INFO)
-    this.dataTransferManager.CommunicateWithBackendGet("../../system/information.php", {"app": "get"}, this)
+    this.dataTransferManager.CommunicateWithBackendGet(PHP_DESTINATION + "system/information.php", {"app": "get"}, this)
 }
 
 SystemInformationCrawler.prototype.GetResponseData = function (data) {
