@@ -1,5 +1,9 @@
 function EventListener() {
     this.isSideSettingMenuOpened = false
+    this.isMicPopUpShowing = false
+    this.isAudioPopUpShowing = false
+    this.isPTZPopUpShowing = false
+    this.isZoomPopUpShowing = false
     PrintLogMessage("EventListener", "EventListener", "init view system", LOG_LEVEL_INFO)
 }
 
@@ -29,6 +33,10 @@ EventListener.prototype.ChangeMicVolume = function () {
 
 EventListener.prototype.ChangeAudioVolume = function () {
     PrintLogMessage("EventListener", "ChangeAudioVolume", "update audio vol", LOG_LEVEL_INFO);
+}
+
+EventListener.prototype.ControlPTZ = function () {
+    PrintLogMessage("EventListener", "ControlPTZ", "control ptz", LOG_LEVEL_INFO);
 }
 
 EventListener.prototype.ChangeZoomeScale = function () {
