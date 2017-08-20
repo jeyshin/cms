@@ -45,7 +45,7 @@
                         Stream 1
                     </div>
                     <!-- DROPDOWN MENU KEK -->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="listStream" onclick="eventListener.ChangeStream()">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
                         <li class="active"><a href="#">Active Option</a></li>
@@ -60,10 +60,14 @@
                         English
                     </div>
                     <!-- DROPDOWN MENU KEK -->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li class="active"><a href="#">Active Option</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" id="listLang" onclick="eventListener.ChangeLanguage(this)">
+                        <li><a href="#">Chinese</a></li>
+                        <li class="active"><a href="#">Engilsh</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">German</a></li>
+                        <li><a href="#">Japanese</a></li>
+                        <li><a href="#">Korean</a></li>
+                        <li><a href="#">Russian</a></li>
                     </ul>
                 </div>
             </div>

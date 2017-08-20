@@ -23,8 +23,12 @@ EventListener.prototype.ChangeStream = function () {
     PrintLogMessage("EventListener", "ChangeStream", "update stream", LOG_LEVEL_INFO);
 }
 
-EventListener.prototype.ChangeLanguage = function () {
+EventListener.prototype.ChangeLanguage = function (eventAcceptedTag) {
     PrintLogMessage("EventListener", "ChangeLanguage", "update language", LOG_LEVEL_INFO);
+
+    $(eventAcceptedTag).on("click", "li", function (event) {
+        PrintLogMessage("EventListener", "ChangeLanguage", "selected!" + $(this).text(), LOG_LEVEL_INFO)
+    })
 }
 
 EventListener.prototype.ChangeMicVolume = function () {

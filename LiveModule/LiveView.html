@@ -64,6 +64,16 @@
 <script src="../Bootstrap/js/bootstrap.min.js"></script>
 
 <script>
+
+    var systemInfoCrawler = new SystemInformationCrawler()
+    systemInfoCrawler.GetSystemInfoRequest()
+
+    var liveLightController = new LiveLightControl()
+    //liveLightController.GetLiveLightData()
+    liveLightController.SetLightStatusAndLevel(1, 10)
+
+    var eventListener = new EventListener()
+
     $( "#navbar_template" ).load( "_TopNav.html", function() {});
     $( "#slider_template" ).load( "_DropSlider.html", function() {});
     $( "#bottom_template" ).load( "_ViewBottomBar.html", function() {});
@@ -80,19 +90,6 @@
     $( "#zoom-option").load( "_ZoomControl.html", function () {
 
     })
-</script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script>
-
-    var systemInfoCrawler = new SystemInformationCrawler()
-    systemInfoCrawler.GetSystemInfoRequest()
-
-    var liveLightController = new LiveLightControl()
-    //liveLightController.GetLiveLightData()
-    liveLightController.SetLightStatusAndLevel(1, 10)
-
-    var eventListener = new EventListener()
-
 </script>
 </body>
 </html>
