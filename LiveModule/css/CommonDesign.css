@@ -635,7 +635,7 @@ html {
 
 .bg-sound {
     position: absolute;
-    top: 537px;
+    top: calc(100% - 231px);
     left: 42px;
     width: 36px;
     height: 186px;
