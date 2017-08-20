@@ -16,5 +16,21 @@ EventListener.prototype.OpenOrCloseSideSettingMenu = function () {
 }
 
 EventListener.prototype.ChangeStream = function () {
-    
+    PrintLogMessage("EventListener", "ChangeStream", "update stream", LOG_LEVEL_INFO);
+}
+
+EventListener.prototype.ChangeLanguage = function () {
+    PrintLogMessage("EventListener", "ChangeLanguage", "update language", LOG_LEVEL_INFO);
+}
+
+EventListener.prototype.ChangeMicVolume = function () {
+    PrintLogMessage("EventListener", "ChangeMicVolume", "update mic vol", LOG_LEVEL_INFO);
+}
+
+EventListener.prototype.ChangeAudioVolume = function () {
+    PrintLogMessage("EventListener", "ChangeAudioVolume", "update audio vol", LOG_LEVEL_INFO);
+}
+
+EventListener.prototype.ChangeZoomeScale = function () {
+    PrintLogMessage("EventListener", "ChangeZoomeScale", "update zoom scale", LOG_LEVEL_INFO);
 }
