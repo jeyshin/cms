@@ -19,6 +19,30 @@ EventListener.prototype.OpenOrCloseSideSettingMenu = function () {
     this.isSideSettingMenuOpened = !this.isSideSettingMenuOpened
 }
 
+EventListener.prototype.OpenOrCloseMicVolume = function () {
+    if(this.isMicPopUpShowing) {
+        PrintLogMessage("EventListener", "OpenOrCloseMicVolume", "close mic pop up", LOG_LEVEL_INFO);
+        $('#mic-option').empty()
+    }
+    else {
+        PrintLogMessage("EventListener", "OpenOrCloseMicVolume", "open mic pop up", LOG_LEVEL_INFO);
+        $('#mic-option').load('_MicVolume.html')
+    }
+    this.isMicPopUpShowing = !this.isMicPopUpShowing;
+}
+
+EventListener.prototype.OpenOrCloseAudioVolume = function () {
+    if(this.isAudioPopUpShowing) {
+        PrintLogMessage("EventListener", "OpenOrCloseAudioVolume", "close audio pop up", LOG_LEVEL_INFO);
+        $('#audio-option').empty()
+    }
+    else {
+        PrintLogMessage("EventListener", "OpenOrCloseAudioVolume", "open audio pop up", LOG_LEVEL_INFO);
+        $('#audio-option').load('_AudioVolume.html')
+    }
+    this.isAudioPopUpShowing = !this.isAudioPopUpShowing;
+}
+
 EventListener.prototype.ChangeStream = function () {
     PrintLogMessage("EventListener", "ChangeStream", "update stream", LOG_LEVEL_INFO);
 }
