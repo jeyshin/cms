@@ -19,7 +19,7 @@ ConfigLoader.prototype.LoadConfigFile = function (configFileLoaderManager) {
 }
 
 ConfigLoader.prototype.ParseConfigFile = function (configFileText) {
-    PrintLogMessage("ConfigLoader", "ParseConfigFile", "parse config file: " + configFileText, LOG_LEVEL_INFO);\
+    PrintLogMessage("ConfigLoader", "ParseConfigFile", "parse config file: " + configFileText, LOG_LEVEL_INFO);
 
     this.configDict = {}
 
@@ -35,8 +35,25 @@ ConfigLoader.prototype.ParseConfigFile = function (configFileText) {
 
 ConfigLoader.prototype.GetIndexOfConfigData = function (key) {
     PrintLogMessage("ConfigLoader", "GetIndexOfConfigData", "get index of data > key: " + key , LOG_LEVEL_INFO);
+
+    try {
+        PrintLogMessage("ConfigLoader", "GetIndexOfConfigData", "get data key: " + key + " value: " + this.configDict[key], LOG_LEVEL_INFO)
+        return this.configDict[key]
+    }
+    catch (except) {
+        PrintLogMessage("ConfigLoader", "GetIndexOfConfigData", "some problem while crawl data, it will return NOT_AVAILABLE", LOG_LEVEL_ERROR)
+        return NOT_AVAILABLE
+    }
 }
 
 ConfigLoader.prototype.GetAllConfigData = function () {
     PrintLogMessage("ConfigLoader", "GetAllConfigData", "get all data", LOG_LEVEL_INFO);
+
+    try {
+        return this.configDict
+    }
+    catch (except) {
+        PrintLogMessage("ConfigLoader", "GetAllConfigData", "some problem while crawl data, it will return NOT_AVAILABLE", LOG_LEVEL_ERROR)
+        return NOT_AVAILABLE
+    }
 }
