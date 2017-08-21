@@ -1,14 +1,187 @@
 /*
    Contents Table/Table SCroll
 */
+
+.container-nav {
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    background-color: #081723;
+}
+
+.navdrop a {
+    font-size: 12px;
+    font-family: NanumGothic;
+    color: #fafafa;
+    vertical-align: middle;
+    line-height: 40px;
+    margin-left: 43px;
+    text-decoration: none;
+}
+
+.btn-navdrop {
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    line-height: 38px;
+    font-size: 12px;
+    color: #fafafa;
+    font-family: NanumGothic;
+    padding: 0px;
+}
+
+.btn-navdrop:hover {
+    color: #fafafa;
+}
+.btn-navdrop:hover p,
+.btn-navdrop:hover span {
+    color: #aabece;
+}
+.btn-navdrop:active {
+    color: #fafafa;
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+.btn-navdrop:active p,
+.btn-navdrop:active span {
+    color: #0a85ed;
+}
+
+.navdrop .dropdown.open p {
+    color: #0a85ed;
+}
+.navdrop .dropdown.open .caret{
+    border-top: none;
+    border-bottom: 4px solid #0a85ed;
+}
+
+
+/*
+   Contents Table/Table SCroll
+*/
+    /* above this is decorative, not part of the test */
+    
+	/* Zupa styles for centered headers */
+	
+	.zupa div.zupa1 {
+		margin: 0 auto !important;
+		width: 0 !important;
+	}
+	
+	.zupa div.th-inner {
+		width: 100%;
+		margin-left: -50%;
+		text-align: center;
+		border: none;
+    }
+        
+    .header-background {
+      border-bottom: 1px solid #112130;
+    }
+
+    .table-sctable td {
+      border-bottom: 1px solid #112130;
+      padding: 5px;
+      text-align: left; /* IE */
+      background-color: #081723;
+      height: 30px;
+    font-size: 11px;
+    }
+
+    .table-sctable td + td {
+      background-color: #081723;
+    }
+    .table-sctable th {
+      padding: 0 5px;
+      text-align: left; /* IE */
+    }
+
+    .fixed-table-container {
+      width: 100%;
+      height: 300px;
+      margin: 10px auto;
+      background-color: transparent;
+      /* above is decorative or flexible */
+      position: relative; /* could be absolute or relative */
+      padding-top: 42px; /* height of header */
+    }
+
+    .fixed-table-container-inner {
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: 100%;
+    }
+     
+    .header-background {
+      background-color: #051019;
+      height: 42px; /* height of header */
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    
+    .table-sctable {
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-family: NanumGothic;
+      color: #fafafa;
+    }
+
+    .th-inner {
+      position: absolute;
+      top: 0;
+      line-height: 42px; /* height of header */
+      text-align: left;
+      border-left: 1px solid #112130;
+      padding-left: 5px;
+      margin-left: -5px;
+      font-family: NanumGothic;
+      color: #fafafa;
+    }
+    .first .th-inner {
+        border-left: none;
+        padding-left: 6px;
+      }
+		
+	/* extra-wrap */
+	
+	.extrawrap th {
+		text-align: center;
+	}
+	
+	.extra-wrap {
+		width: 100%;
+	}
+
+    /* for hidden header hack to calculate widths of dynamic content */
+    
+    .hidden-head {
+      min-width: 530px; /* enough width to show all header text, or bad things happen */
+    }
+    
+    .hidden-header .th-inner {
+      position: static;
+      overflow-y: hidden;
+      height: 0;
+      white-space: nowrap;
+      padding-right: 5px;
+    }
+    
+/*
+   Contents Table/Table SCroll
+*/
 .table-hitron {
     font-family: NanumGothic;
     color: #fafafa;
     border: 1px solid #112130;
 }
 
-.table-hitron > thead > tr > th {
+.table-hitron thead tr {
     background-color: #051019;
+}
+.table-hitron thead tr th {
     height: 42px;
     font-size: 12px;
     font-weight: normal;
@@ -18,21 +191,34 @@
     border-bottom: 1px solid #112130;
 }
 
-.table-hitron > tbody > tr > td {
-    background-color: #081723;
+.table-hitron.select tbody tr.toggled {
+    background-color: #0a85ed;
+}
+
+.table-hitron tbody tr td {
     vertical-align: middle;
     font-size: 11px;
     height: 30px;
     border-bottom: 1px solid #112130;
 }
 
-.table-hitron > tbody > tr > td.nontext {
+.table-hitron tbody tr td.nontext {
     margin: 0px;
     padding: 0px;
     text-align: center;
     vertical-align: middle;
 }
 
+.table-hitron tbody tr {
+    background-color: #081723;
+}
+.table-hitron.select tbody tr:hover {
+    outline: 1px solid #0a85ed;
+}
+.table-hitron.select tbody tr:active {
+    outline: none;
+    background-color: #064172;
+}
 
 /*
    Contents Tab
@@ -88,13 +274,75 @@
 /*
     Dropdown
 */
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu> .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 11px;
+    margin-left: -4px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .divider {
+    height: 2px;
+    overflow: hidden;
+    background-color: #2d455a;
+    border-bottom: 1px solid #445c72;
+    margin: 2px 4px 0px 4px;
+    width: calc(100% - 8px);
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-left-color: #ccc;
+    margin-top: 4px;
+    margin-right: 0px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+}
+
 .dropdown-menu {
     width: 120px;
-    height: 28;
     background-color: #3b536a;
     border-radius: 0px;
-    padding: 0px;
     min-width: 120px;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu.function {
+    border: 1px solid #112130;
 }
 
 .dropdown-menu > li {
@@ -130,8 +378,8 @@
 .dropdown-menu > .active > a:focus {
     background-color: #0a85ed;
     color: #fafafa;
+    border: none;
 }
-
 /*
     Value Slider
 */
@@ -356,11 +604,18 @@ input[type=range].disabled::-moz-range-thumb {
 }
 
 .btn-timebar {
-  margin-left: 0px;
-  border-top: 1px solid #3b536a;
-  padding-top: 8px;
-  padding-bottom: 8px;
+    margin-left: 0px;
+    border-top: 1px solid #3b536a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
 }
+
+.btn-timebar .btn {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
     background: none;
 }
@@ -381,6 +636,18 @@ input[type=range].disabled::-moz-range-thumb {
     width: 306px;
 }
 
+.timepicker-hours {
+    height:10px;
+}
+
+.timepicker-minutes {
+    height:10px;
+}
+
+.timepicker-seconds {
+    height:10px;
+}
+
 .bootstrap-datetimepicker-widget.dropdown-menu.top:after {
     content: none;
 }
@@ -389,6 +656,14 @@ input[type=range].disabled::-moz-range-thumb {
 .bootstrap-datetimepicker-widget table td {
     font-size: 13px;
     border-radius: 0px;
+    height: 10px;
+}
+
+
+.bootstrap-datetimepicker-widget table td.day {
+    height: 30px;
+    width: 38px;
+    line-height: 30px;
 }
 
 .bootstrap-datetimepicker-widget table td.today:before {
@@ -671,7 +946,57 @@ input[type=password]:focus {
     border: 1px solid #0a85ed;
 }
 
-/* This component has width issue! You have to substract 20px before you use this search form! like width: calc(100% - 20px)*/
+
+input.time{
+    padding-left: 40px;
+    width: 150px;
+    background-color: #081723;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+
+    background-image: url("../png/btn-time-nor.png");
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: calc(13px);
+
+    text-align: center;
+}
+input.time:focus{
+    padding-left: 40px;
+    background-color: #081723;
+    
+    background-image: url("../png/btn-time-press.png");
+
+    text-align: center;
+}
+
+input.date{
+    padding-left: 40px;
+    width: 150px;
+    background-color: #081723;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+
+    background-image: url("../png/btn-date-nor.png");
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    background-position: calc(13px);
+
+    text-align: center;
+}
+input.date:focus{
+    padding-left: 40px;
+    background-color: #081723;
+    
+    background-image: url("../png/btn-date-press.png");
+
+    text-align: center;
+}
+
 input.search{
     background-color: #081723;
     
@@ -680,7 +1005,6 @@ input.search{
     box-sizing: border-box;
 
     background-image: url("../png/ic-search-nor.png");
-    padding-right: 20px;
     background-size: 13px 13px;
     background-repeat: no-repeat;
     background-position: calc(100% - 7px);
@@ -689,7 +1013,6 @@ input.search:focus{
     background-color: #081723;
     
     background-image: url("../png/ic-search-nor.png");
-    padding-right: 20px;
     background-size: 13px 13px;
     background-repeat: no-repeat;
     background-position: calc(100% - 7px);

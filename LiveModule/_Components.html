@@ -13,6 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     
+    <link href="../Bootstrap/css/reset.css" rel="stylesheet">
+    <link href="../Bootstrap/css/simplebar.css" rel="stylesheet">
     <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../Bootstrap/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
@@ -25,9 +27,9 @@
     <style>
         .divider {
             width: 100%;
-            height: 2px;
+            height: 0.100em;
             background-color: #090909;
-            border-bottom: 1px solid #3b536a;
+            border-bottom: 0.050em solid #3b536a;
             margin-top: 20px;
             margin-bottom: 20px;
         }
@@ -74,18 +76,29 @@
                 <h4>DROPDOWN BUTTONS</h4>
             </div>
             <div class="container">
-                <div class="dropdown">
-                    <!-- IT'S A BUTTON MATE -->
-                    <div class="btn btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 120px;">
-                        Dropdown
-                    </div>
-                    <!-- DROPDOWN MENU KEK -->
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li class="active"><a href="#">Active Option</a></li>
-                    </ul>
+                    
+            <div class="dropdown">
+                <div class="btn btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 120px;">
+                    Dropdown
                 </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li class="active"><a href="#">Active Option</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown" style="float: right;">
+                <div class="btn btn-dropdown" type="button" id="dropdownMenu9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 210px;">
+                    Dropdown
+                </div>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu9">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li class="active"><a href="#">Active Option</a></li>
+                </ul>
+            </div>
+
             </div>
         <div class="divider"></div>
             <div class="container">
@@ -104,6 +117,70 @@
         <div class="divider"></div>
             <div class="container">
                 <h2>CONTENTS TABLE</h2>
+            </div>
+
+            <div class="container deck">
+                <div class="fixed-table-container zupa">
+                    <div class="header-background "> </div>
+                    <div class="fixed-table-container-inner">
+                        <table cellspacing="0" class="table-sctable">
+                            <thead>
+                                <tr>
+                                    <th class="first" style="width: 50px;">
+                                        <div class="zupa1" style="padding: 0; pointer-events: none; ">
+                                            <div class="th-inner" style="padding: 0; pointer-events: none; ">
+                                                <input type="checkbox" id="tol"/>
+                                                <label for="tol" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="zupa1">
+                                            <div class="th-inner">USER NAME</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="zupa1">
+                                            <div class="th-inner">USER GROUP</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="zupa1">
+                                            <div class="th-inner">AUTHORITY</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab001"/><label for="tab001" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab002"/><label for="tab002" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab003"/><label for="tab003" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab004"/><label for="tab004" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab005"/><label for="tab005" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab006"/><label for="tab006" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab007"/><label for="tab007" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab008"/><label for="tab008" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab009"/><label for="tab009" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab010"/><label for="tab010" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab011"/><label for="tab011" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab012"/><label for="tab012" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab013"/><label for="tab013" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab014"/><label for="tab014" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab015"/><label for="tab015" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab016"/><label for="tab016" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab017"/><label for="tab017" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab018"/><label for="tab018" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab019"/><label for="tab019" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab020"/><label for="tab020" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab021"/><label for="tab021" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                                <tr><td style="text-align:center;"><input type="checkbox" id="tab022"/><label for="tab022" style="margin: 0px;"><span style="margin: 0px;"></span></label></td><td>admin</td><td>administrator</td><td>live, setup, system</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2>SELECTABLE CONTENTS TABLE</h2>
             </div>
             <div class="container deck">
                 <table class="table table-hitron">
@@ -134,18 +211,102 @@
                             <input type="checkbox" id="ta3"/>
                             <label for="ta3" style="margin: 0px;"><span style="margin: 0px;"></span></label>
                         </td>
+                        <td>admin</td>
+                        <td>administrator</td>
+                        <td>live, setup, system</td>
+                    </tr>
+                    <tr class="toggled">
+                        <td class="nontext">
+                            <input type="checkbox" id="ta4"/>
+                            <label for="ta4" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td>admin</td>
+                        <td>administrator</td>
+                        <td>live, setup, system</td>
+                    </tr>
+                    <tr>
+                        <td class="nontext">
+                            <input type="checkbox" id="ta5"/>
+                            <label for="ta5" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td class="nontext">
-                            <input type="checkbox" id="ta4"/>
-                            <label for="ta4" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                            <input type="checkbox" id="ta6"/>
+                            <label for="ta6" style="margin: 0px;"><span style="margin: 0px;"></span></label>
                         </td>
                         <td></td>
                         <td></td>
                         <td></td>
+                    </tr>
+                    <tr>
+                        <td class="nontext">
+                            <input type="checkbox" id="ta7"/>
+                            <label for="ta7" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="nontext">
+                            <input type="checkbox" id="ta8"/>
+                            <label for="ta8" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <h2>SELECTABLE CONTENTS TABLE</h2>
+            </div>
+            <div class="container deck">
+                <table class="table table-hitron select">
+                    <thead>
+                        <tr>
+                            <th width="44px">
+                                <input type="checkbox" id="ta1"/>
+                                <label for="ta1" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                            </th>
+                            <th>USER NAME</th>
+                            <th>USER GROUP</th>
+                            <th>AUTHORITY</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                    <tr>
+                        <td class="nontext">
+                            <input type="checkbox" id="ta2"/>
+                            <label for="ta2" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td>admin</td>
+                        <td>administrator</td>
+                        <td>live, setup, system</td>
+                    </tr>
+                    <tr>
+                        <td class="nontext">
+                            <input type="checkbox" id="ta3"/>
+                            <label for="ta3" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td>admin</td>
+                        <td>administrator</td>
+                        <td>live, setup, system</td>
+                    </tr>
+                    <tr class="toggled">
+                        <td class="nontext">
+                            <input type="checkbox" id="ta4"/>
+                            <label for="ta4" style="margin: 0px;"><span style="margin: 0px;"></span></label>
+                        </td>
+                        <td>admin</td>
+                        <td>administrator</td>
+                        <td>live, setup, system</td>
                     </tr>
                     <tr>
                         <td class="nontext">
@@ -295,8 +456,88 @@
                 <h2>NAVIGATION DROPDOWN</h2>
             </div>
         <div class="divider"></div>
+            
+        <div class="container">
+            <div class="container-nav">
+                    <div class="dropdown" style="width: 210px";>
+                        <!-- IT'S A BUTTON MATE -->
+                        <div class="btn btn-navdrop" type="button" id="navDrop2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Setting / <p style="display: inline;">Basic Configuration</p> <span class="caret" style="margin-left: 8px;"></span>
+                        </div>
+                        
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navDrop2" style="width: 150px;">
+                            <li><a href="#">Not Basic Configuration</a></li>
+                            <li><a href="#">Advanced Configuration</a></li>
+                            <li><a href="#">Expert Configuration</a></li>
+                            <li class="active"><a href="#">Is this Configuration?</a></li>
+                        </ul>
+                    </div>
+            </div> 
+        </div> 
+
+
+        <div class="divider"></div>
             <div class="container">
                 <h2>FUNCTION DROPDOWN</h2>
+            </div>
+        <div class="divider"></div>
+            <div class="container">
+                <div class="dropdown">
+                    <div class="btn btn-dropdown" type="button" id="dropdownMenu22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 220px;">
+                        Dropdown
+                    </div>
+                    
+                    <ul class="dropdown-menu multi-level function" role="menu" aria-labelledby="dropdownMenu22" style="width: 220px;">
+                    <li><a href="#">There it goes</a></li>
+                    <li><a href="#">Ooo it coming!</a></li>
+                    <li><a href="#">Oh mah god it's divider</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">no i'm isolated!</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-submenu">
+                        <a tabindex="-1" href="#">Hover me for more options</a>
+                        <ul class="dropdown-menu" style="width: 220px;">
+                        <li><a tabindex="-1" href="#">Second level</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#">maybe more</a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                <li><a href="#">santa</a></li>
+                                <li><a href="#">does not exists</a></li>
+                                <li><a href="#">maybe</a></li>
+                                <li><a href="#">really?</a></li>
+                                <li><a href="#">no</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">kinda</a></li>
+                                <li><a href="#">yes</a></li>
+                                <li><a href="#">maybe</a></li>
+                                <li><a href="#">really?</a></li>
+                                <li><a href="#">santa</a></li>
+                                <li><a href="#">does not exists</a></li>
+                                <li><a href="#">maybe</a></li>
+                                <li><a href="#">really?</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">no</a></li>
+                                <li><a href="#">kinda</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">yes</a></li>
+                                <li><a href="#">maybe</a></li>
+                                <li><a href="#">really?</a></li>
+                                <li><a href="#">no</a></li>
+                                <li><a href="#">kinda</a></li>
+                                <li><a href="#">yes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">i hate memes</a></li>
+                        <li><a href="#">boneless pizza</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">pizza don't have bones</a></li>
+                        <li><a href="#">EXTRA THICC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">but i am single line</a></li>
+                    <li><a href="#">memes</a></li>
+                    </ul>
+                </div>
             </div>
         <div class="divider"></div>
             <div class="container">
@@ -354,7 +595,19 @@
             <div class="container">
                 <div class="row">
                     <div class='col-sm-6'>
-                        <input type='text' class="form-control" id='datetimepicker4' data-action="togglePicker"/>
+                        <input type='text' class="date" id='datetimepicker4' data-action="togglePicker"/>
+                    </div>
+                </div>
+            </div>
+        <div class="divider"></div>
+            <div class="container">
+                <h2>TIME SELECTION</h2>
+            </div>
+        <div class="divider"></div>
+            <div class="container">
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <input type='text' class="time" id='datetimepicker2' data-action="togglePicker"/>
                     </div>
                 </div>
             </div>
@@ -422,15 +675,18 @@
                 <div class="form-group">
                     <label class="col-sm-5 control-label" for="email">Email:</label>
                     <div class="col-sm-7">
-                        <div class="btn btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 120px;">
-                            Dropdown
+                        
+                        <div class="dropdown">
+                            <div class="btn btn-dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width: 120px;">
+                                Dropdown
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="active"><a href="#">Active Option</a></li>
+                            </ul>
                         </div>
-                        <!-- DROPDOWN MENU KEK -->
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li class="active"><a href="#">Active Option</a></li>
-                        </ul>
+
                     </div>
                 </div>
                 </form>
@@ -466,6 +722,7 @@
 <script src="../Bootstrap/js/bootstrap.min.js"></script>
 <script src="../Bootstrap/js/moment.min.js"></script>
 <script src="../Bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../Bootstrap/js/simplebar.js"></script>
 <script src="js/Page/ui.js"></script>
     <script type="text/javascript">
         $(function () {
@@ -477,6 +734,15 @@
                 daysOfWeekDisabled: [0, 6],
                 keepOpen: true,
                 //disabledDates: [moment/newDate https://eonasdan.github.io/bootstrap-datetimepicker/#enableddisabled-dates],
+            });
+        });
+
+        $(function () {
+            $('#datetimepicker2').datetimepicker({
+                defaultDate: "now",
+                format: 'hh:mm:ss',
+                showClose: true,
+                showClear: true,
             });
         });
     </script>
