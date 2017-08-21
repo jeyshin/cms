@@ -1,6 +1,7 @@
 function ConfigLoader() {
     PrintLogMessage("ConfigLoader", "ConfigLoader", "Init config loader", LOG_LEVEL_INFO);
     this.configFileText = ""
+    this.configDict = {}
     this.LoadConfigFile(this)
 }
 
@@ -18,8 +19,18 @@ ConfigLoader.prototype.LoadConfigFile = function (configFileLoaderManager) {
 }
 
 ConfigLoader.prototype.ParseConfigFile = function (configFileText) {
-    PrintLogMessage("ConfigLoader", "ParseConfigFile", "parse config file", LOG_LEVEL_INFO);
-    
+    PrintLogMessage("ConfigLoader", "ParseConfigFile", "parse config file: " + configFileText, LOG_LEVEL_INFO);\
+
+    this.configDict = {}
+
+    splitedMessage = configFileText.split("\n")
+    for(indexOfMessageNumber in splitedMessage) {
+        indexOfData = splitedMessage[indexOfMessageNumber]
+
+        keyValueData = indexOfData.split("=")
+        this.configDict[keyValueData[0]] = keyValueData[1]
+        PrintLogMessage("ConfigLoader", "ParseConfigFile", "parsed key: " + keyValueData[0] + " value: " + keyValueData[1], LOG_LEVEL_INFO)
+    }
 }
 
 ConfigLoader.prototype.GetIndexOfConfigData = function (key) {
