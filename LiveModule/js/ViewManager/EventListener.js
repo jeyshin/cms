@@ -46,9 +46,11 @@ EventListener.prototype.OpenOrCloseAudioVolume = function () {
 EventListener.prototype.OpenOrClosePTZ = function () {
     if(this.isPTZPopUpShowing) {
         PrintLogMessage("EventListener", "OpenOrClosePTZ", "close ptz pop up", LOG_LEVEL_INFO);
+        $('#control-option').empty()
     }
     else {
         PrintLogMessage("EventListener", "OpenOrClosePTZ", "open ptz pop up", LOG_LEVEL_INFO);
+        $('#control-option').load('_LiveControl.html')
     }
     this.isPTZPopUpShowing = !this.isPTZPopUpShowing;
 }
@@ -56,9 +58,11 @@ EventListener.prototype.OpenOrClosePTZ = function () {
 EventListener.prototype.OpenOrCloseZoom = function () {
     if(this.isZoomPopUpShowing) {
         PrintLogMessage("EventListener", "OpenOrCloseZoom", "close zoom pop up", LOG_LEVEL_INFO);
+        $('#zoom-option').empty()
     }
     else {
         PrintLogMessage("EventListener", "OpenOrCloseZoom", "open zoom pop up", LOG_LEVEL_INFO);
+        $('#zoom-option').load('_ZoomControl.html')
     }
     this.isZoomPopUpShowing = !this.isZoomPopUpShowing;
 }
