@@ -43,6 +43,26 @@ EventListener.prototype.OpenOrCloseAudioVolume = function () {
     this.isAudioPopUpShowing = !this.isAudioPopUpShowing;
 }
 
+EventListener.prototype.OpenOrClosePTZ = function () {
+    if(this.isPTZPopUpShowing) {
+        PrintLogMessage("EventListener", "OpenOrClosePTZ", "close ptz pop up", LOG_LEVEL_INFO);
+    }
+    else {
+        PrintLogMessage("EventListener", "OpenOrClosePTZ", "open ptz pop up", LOG_LEVEL_INFO);
+    }
+    this.isPTZPopUpShowing = !this.isPTZPopUpShowing;
+}
+
+EventListener.prototype.OpenOrCloseZoom = function () {
+    if(this.isZoomPopUpShowing) {
+        PrintLogMessage("EventListener", "OpenOrCloseZoom", "close zoom pop up", LOG_LEVEL_INFO);
+    }
+    else {
+        PrintLogMessage("EventListener", "OpenOrCloseZoom", "open zoom pop up", LOG_LEVEL_INFO);
+    }
+    this.isZoomPopUpShowing = !this.isZoomPopUpShowing;
+}
+
 EventListener.prototype.ChangeStream = function () {
     PrintLogMessage("EventListener", "ChangeStream", "update stream", LOG_LEVEL_INFO);
 }
